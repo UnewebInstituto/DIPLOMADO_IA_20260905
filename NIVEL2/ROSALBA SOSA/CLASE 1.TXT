@@ -1,0 +1,21 @@
+1)ENLACE PARA DESCARGAR VISUAL STUDIO CODE:
+
+https://code.visualstudio.com/
+
+2)PROCEDIMIENDO PARA CREAR SITIO WEB:
+SELECCIONAR UNA PALNTILLA (UNA PLANTILLA ES UN SITIO WEB FUNCIONAL QUE PUEDE SER PERSONALIZADO)
+LUGAR SUGERIDO PARA UBICAR PLANTILLA:
+WWW.BOOTSTRAPMADE.com
+
+3) SE VA A PREPARAR UN PROMPT PARA CLAUDE CON EL ENUNCIADO TOMANDO LAS CARACTERISTICAS DE UN BUEN PROMT:
+R) ROL
+T: TAREA
+F: FORMATO
+C: CONTEXTO
+L: LIMITE
+
+Asume el rol de experto en desarrollo Web y SEO (Search Engine Optimization), toma el contenido del archivo anexo, el cual corresponde al index de una plantilla de bootstrapmade, quiero que adecues el contenido de dicho archivo para un negocio de repostería, el nombre del negocio es "Dulce Aroma", efectua todas las consideraciones del caso, concernientes a información de postres, pastelería y temas relacionados. Conserva todos los aspectos del diseño, apariencia, color, imagenes, estilos e interacción con el usuario. Genera el resultado final en archivo formato html de nombre index.html
+
+
+https://filezilla-project.org/
+https://rosalbasosa.alwaysdata.net/

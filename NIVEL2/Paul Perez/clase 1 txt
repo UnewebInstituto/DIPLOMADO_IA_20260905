@@ -1,0 +1,26 @@
+1) enlace para descargar visual studio code
+https://code.visualstudio.com/
+
+2) procedimiento para crear sitio WEb: 
+seleccionar una plantilla (una plantilla es un sitio web funcional que puede ser personalizado) 
+lugar sugerido para ubicar plantilla: 
+www.bootstrapmade.com
+
+3) se va a preparar un promp para claude con el siguiente enunciado tomando en cuenta las caracteristica de un buen promp
+R: rol
+T: tarea
+F: formato
+c: contexto 
+L: limites
+
+Asume el rol de experto en desarrollo Web y SEO (Search Engine Optimization), toma el contenido del archivo anexo, el cual corresponde al index de una plantilla de bootstrapmade, quiero que adecues el contenido de dicho archivo para un negocio de repostería, el nombre del negocio es "Dulce Aroma", efectua todas las consideraciones del caso, concernientes a información de postres, pastelería y temas relacionados. Conserva todos los aspectos del diseño, apariencia, color, imagenes, estilos e interacción con el usuario. Genera el resultado final en archivo formato html de nombre index.html
+
+
+
+4) Publicar en un sevidor hosting. Se recomienda el sitio web:
+www.alwaysdata.com (Plan gratuito)
+
+5) Instalar Filezilla:
+https://filezilla-project.org/
+
+https://paulperez.alwaysdata.net

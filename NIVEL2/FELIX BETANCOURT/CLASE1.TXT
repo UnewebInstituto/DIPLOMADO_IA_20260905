@@ -1,0 +1,26 @@
+1)Enlace para descargar Visual Studio Code:
+https://code.visualstudio.com/
+
+2) Procedimiento para crear sitio web:
+Seleccionar una plantilla (Una plantilla es un sitio web funcional que puede ser personalizado)
+Lugar sugerido para ubicar plantillas:
+www.bootstrapmade.com
+
+3) Se va a prepara un prompt para Claude con el 
+enunciado, tomando las característica de un buen
+prompt:
+R: Rol
+T: Tarea
+F: Formato
+C: Contexto
+L: Límites
+
+Asume el rol de experto en desarrollo Web y SEO (Search Engine Optimization), toma el contenido del archivo anexo, el cual corresponde al index de una plantilla de bootstrapmade, quiero que adecues el contenido de dicho archivo para un negocio de repostería, el nombre del negocio es "Dulce Aroma", efectua todas las consideraciones del caso, concernientes a información de postres, pastelería y temas relacionados. Conserva todos los aspectos del diseño, apariencia, color, imagenes, estilos e interacción con el usuario. Genera el resultado final en archivo formato html de nombre index.html
+
+4) Publicar en un sevidor hosting. Se recomienda el sitio web:
+www.alwaysdata.com (Plan gratuito)
+
+5) Instalar Filezilla:
+https://filezilla-project.org/
+
+https://felixsenpai.alwaysdata.net/
