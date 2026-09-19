@@ -1,0 +1,2 @@
+<script src="https://cdn.botpress.cloud/webchat/v5.0/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2026/09/19/19/20260919195712-5JE3TJ19.js" defer></script>
