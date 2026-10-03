@@ -1,0 +1,128 @@
+https://www.kaggle.com/
+
+https://es.wikipedia.org/wiki/Kaggle
+
+Practica Nro. 1
+https://www.kaggle.com/datasets/mikhail1681/walmart-sales
+
+PROCEDIMIENTO PARA APLICAR CÓDIGO PYTHON, 
+CUANDO ESTE ES GENERADO POR LA IA.
+
+1) SE DEBE TENER INSTALADO PYTHON.
+https://www.python.org/
+
+2) INSTALAR UN ENTORNO VIRTUAL.
+2-1) Abrir una terminal desde Visual Studio Code.
+Desde el menú: Terminal, Nuevo Terminal
+
+Nota: Hay 3 tipos de terminal
+Poweshell
+Gitbash
+Command Prompt <-- Elegir este
+
+
+Desde una terminal, se ejecuta el comando:
+python -m venv venv
+
+Microsoft Windows [Versión 10.0.20348.5622]
+(c) Microsoft Corporation. Todos los derechos reservados.
+
+C:\.Profesores\HENRY_DUQUE\DIPLOMADO_IA_20260905>python --version 
+Python 3.14.5
+
+C:\.Profesores\HENRY_DUQUE\DIPLOMADO_IA_20260905>cd NIVEL3
+
+C:\.Profesores\HENRY_DUQUE\DIPLOMADO_IA_20260905\NIVEL3>cd PROFESOR
+
+(venv) C:\.Profesores\HENRY_DUQUE\DIPLOMADO_IA_20260905\NIVEL3\PROFES
+Package Version
+------- -------
+pip     26.1.1
+
+(venv) C:\.Profesores\HENRY_DUQUE\DIPLOMADO_IA_20260905\NIVEL3\PROFES
+Collecting pandas
+  Downloading pandas-3.0.6-cp314-cp314-win_amd64.whl.metadata (19 kB)
+Collecting numpy>=2.3.3 (from pandas)
+  Downloading numpy-2.5.3-cp314-cp314-win_amd64.whl.metadata (6.6 kB)
+Collecting python-dateutil>=2.8.2 (from pandas)
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metada
+Collecting tzdata (from pandas)
+  Downloading tzdata-2026.5-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas)
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Downloading pandas-3.0.6-cp314-cp314-win_amd64.whl (9.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.8/9.8 MB 1.2 MB/s  0:00
+Downloading numpy-2.5.3-cp314-cp314-win_amd64.whl (12.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.7/12.7 MB 1.3 MB/s  0:
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Downloading tzdata-2026.5-py2.py3-none-any.whl (347 kB)
+Installing collected packages: tzdata, six, numpy, python-dateutil, p
+Successfully installed numpy-2.5.3 pandas-3.0.6 python-dateutil-2.9.0
+
+Profesores\HENRY_DUQUE\DIPLOMADO_IA_20260905\NIVEL3\PROFESOR>pip list
+Package         Version
+--------------- -----------
+numpy           2.5.3
+pandas          3.0.6
+pip             26.1.1
+python-dateutil 2.9.0.post0
+six             1.17.0
+tzdata          2026.5
+
+(venv) C:\.Profesores\HENRY_DUQUE\DIPLOMADO_IA_20260905\NIVEL3\PROFESOR>
+
+
+(venv) C:\.Profesores\HENRY_DUQUE\DIPLOMADO_IA_20260905\NIVEL3\PROFESOR>py resultado_python.py
+Shape: (6435, 8)
+
+Columns: ['Store', 'Date', 'Weekly_Sales', 'Holiday_Flag', 'Temperature', 'Fuel_Price', 'CPI', 'Unemployment']
+
+Head:
+    Store        Date  Weekly_Sales  Holiday_Flag  Temperature  Fuel_Price         CPI  Unemployment
+0      1  05-02-2010    1643690.90             0        42.31       2.572  211.096358         8.106
+1      1  12-02-2010    1641957.44             1        38.51       2.548  211.242170         8.106
+2      1  19-02-2010    1611968.17             0        39.93       2.514  211.289143         8.106
+3      1  26-02-2010    1409727.59             0        46.63       2.561  211.319643         8.106
+4      1  05-03-2010    1554806.68             0        46.50       2.625  211.350143         8.106
+
+Info/Types:
+ Store             int64
+Date                str
+Weekly_Sales    float64
+Holiday_Flag      int64
+Temperature     float64
+Fuel_Price      float64
+CPI             float64
+Unemployment    float64
+dtype: object
+
+Missing values:
+ Store           0
+Date            0
+Weekly_Sales    0
+Holiday_Flag    0
+Temperature     0
+Fuel_Price      0
+CPI             0
+Unemployment    0
+dtype: int64
+
+Summary stats:
+              Store  Weekly_Sales  Holiday_Flag  Temperature   Fuel_Price          CPI  Unemployment
+count  6435.000000  6.435000e+03   6435.000000  6435.000000  6435.000000  6435.000000   6435.000000
+mean     23.000000  1.046965e+06      0.069930    60.663782     3.358607   171.578394      7.999151
+std      12.988182  5.643666e+05      0.255049    18.444933     0.459020    39.356712      1.875885
+min       1.000000  2.099862e+05      0.000000    -2.060000     2.472000   126.064000      3.879000
+25%      12.000000  5.533501e+05      0.000000    47.460000     2.933000   131.735000      6.891000
+50%      23.000000  9.607460e+05      0.000000    62.670000     3.445000   182.616521      7.874000
+75%      34.000000  1.420159e+06      0.000000    74.940000     3.735000   212.743293      8.622000
+max      45.000000  3.818686e+06      1.000000   100.140000     4.468000   227.232807     14.313000
+Min Date: 2010-02-05 00:00:00
+Max Date: 2012-10-26 00:00:00
+Unique stores: 45
+
+-- Quitar el entorno virtual
+(venv) C:\.Profesores\HENRY_DUQUE\DIPLOMADO_IA_20260905\NIVEL3\PROFESOR>venv\scripts\deactivate
+
+
