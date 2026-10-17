@@ -1,0 +1,58 @@
+MATRIZ DE CONFUSIÓN
+
+
+¡Hola! Como experto en Inteligencia Artificial, con gusto te explico este concepto clave.
+
+Una **matriz de confusión** es una herramienta fundamental en el aprendizaje automático (*machine learning*) que se utiliza para **evaluar el rendimiento de un modelo de clasificación**.
+
+A diferencia de una simple métrica de porcentaje de acierto (*accuracy*), la matriz de confusión ofrece una visión detallada y desglosada de aciertos y errores, permitiendo identificar exactamente dónde está fallando el modelo.
+
+---
+
+### Estructura Básica (Clasificación Binaria)
+
+Para un problema de dos clases (Positivo y Negativo), la matriz cruza las **predicciones del modelo** frente a los **valores reales** de los datos:
+
+| Valor Real / Predicho | Predicho: Positivo (1) | Predicho: Negativo (0) |
+| --- | --- | --- |
+| **Real: Positivo (1)** | **Verdadero Positivo (TP)** | **Falso Negativo (FN)** *(Error Tipo II)* |
+| **Real: Negativo (0)** | **Falso Positivo (FP)** *(Error Tipo I)* | **Verdadero Negativo (TN)** |
+
+---
+
+### Componentes Clave
+
+* **Verdaderos Positivos (TP):** El modelo predijo que era positivo y **sí** era positivo (Acierto).
+* **Verdaderos Negativos (TN):** El modelo predijo que era negativo y **sí** era negativo (Acierto).
+* **Falsos Positivos (FP):** El modelo predijo que era positivo, pero **era negativo** (Falsa alarma / Error Tipo I).
+* **Falsos Negativos (FN):** El modelo predijo que era negativo, pero **era positivo** (Omisión / Error Tipo II).
+
+---
+
+### Métricas Principales Derivadas
+
+A partir de estos cuatro valores, se calculan las métricas críticas para evaluar el negocio o la aplicación:
+
+* **Exactitud (Accuracy):** Proporción total de predicciones correctas.
+* Fórmula: $(TP + TN) / (TP + TN + FP + FN)$
+
+
+* **Precisión (Precision):** De todos los positivos que predijo el modelo, ¿cuántos eran realmente positivos? (Vital para evitar falsas alarmas).
+* Fórmula: $TP / (TP + FP)$
+
+
+* **Sensibilidad o Exhaustividad (Recall / Sensitivity):** De todos los positivos reales que existían, ¿cuántos fue capaz de detectar el modelo? (Vital para no dejar pasar casos críticos, como en medicina o fraudes).
+* Fórmula: $TP / (TP + FN)$
+
+
+* **F1-Score:** La media armónica entre la Precisión y el Recall, útil cuando se busca un balance entre ambas métricas.
+
+---
+
+
+https://teachablemachine.withgoogle.com/
+
+https://www.kaggle.com/datasets/almique/glass-bangle-defect-detection-classification
+
+
+https://www.kaggle.com/datasets/ravirajsinh45/real-life-industrial-dataset-of-casting-product
