@@ -1,0 +1,97 @@
+https://www.youtube.com/watch?v=cPFaMiGk5J0&t=499s
+
+https://ai.google.dev/gemini-api/docs/generate-content?hl=es-419
+
+https://ai.google.dev/gemini-api/docs/generate-content/api-key?hl=es-419
+
+PASO 1:
+Plantilla 4.1.5:
+"Actúa como asistente de análisis contractual. Lee el contrato adjunto y extrae en una tabla (asume la parte de 2THEMART.COM,): (1) tipo de cláusula, (2) texto citado textualmente (traducir al español), (3) página o sección, (4) nivel de riesgo (bajo/medio/alto) para la parte que representamos (traducir al español), (5) acción recomendada (en español). Si algún campo no aparece en el documento, indica 'no especificado' en vez de inferirlo."
+
+PASO 2:
+Se tendrán 5 contratos diferentes para ser analizados por el asistente de
+Clause IA.
+
+https://www.w3schools.com/
+
+
+https://huggingface.co/
+
+Como experto en Inteligencia Artificial y arquitecturas de datos, abordar el pipeline de procesamiento para **datos multimodales (imágenes, video y audio)** en una base de datos vectorial requiere ir mucho más allá del clásico enfoque de texto (tokenización y chunking por número de palabras).
+
+En el ecosistema multimodal actual, el objetivo es proyectar diferentes tipos de medios físicos hacia un **espacio vectorial compartido** (como CLIP, CLAP o modelos de embeddings multimodales nativos), permitiendo la recuperación semántica cruzada (por ejemplo, buscar un video describiéndolo con texto o encontrar un audio por su similitud conceptual).
+
+A continuación, te detallo las cuatro fases clave de este proceso técnico:
+
+---
+
+## 1. Fase de Ingesta (Adquisición y Normalización)
+
+La ingesta consiste en recibir los archivos crudos (binarios o streams) y estandarizarlos para que los modelos de extracción puedan procesarlos sin errores de formato, resolución o tasa de muestreo.
+
+* **Imágenes:**
+* Conversión de formatos nativos (PNG, WEBP, TIFF, HEIC) a un espacio de color uniforme (típicamente RGB de 8 bits).
+* Redimensionamiento y normalización de la resolución (ej. $224 \times 224$ o $384 \times 384$ píxeles según los requerimientos del codificador visual).
+* Extracción de metadatos críticos (EXIF, fecha, geolocalización, dimensiones).
+
+
+* **Audio:**
+* Decodificación de contenedores (MP3, AAC, FLAC, OGG) a un formato estándar de audio crudo (PCM lineal).
+* Resmuestreo (*resampling*) a una frecuencia fija (frecuentemente 16 kHz o 44.1 kHz) y conversión a canal monofónico para simplificar el procesamiento acústico.
+
+
+* **Video:**
+* Desempaquetado (*demuxing*) para separar la pista de video (frames) de la pista de audio.
+* Normalización de la tasa de cuadros por segundo (FPS) y estandarización de la resolución espacial de los fotogramas.
+
+
+
+---
+
+## 2. Fase de Chunking / Fragmentación (Segmentación Multimodal)
+
+A diferencia del texto, donde el chunking se basa en párrafos o tokens de texto, en medios enriquecidos la fragmentación es **espacial y temporal**:
+
+* **Imágenes (Chunking Espacial):**
+* *Enfoque Global:* La imagen completa se trata como un único "chunk" visual para capturar el contexto general.
+* *Enfoque Regional / Parches:* Se divide la imagen en subregiones (por ejemplo, mediante grillas de parches como en Vision Transformers - ViT) o se aplican algoritmos de detección de objetos (Bounding Boxes / ROI) para fragmentar elementos discretos dentro de la escena.
+
+
+* **Audio (Chunking Temporal):**
+* Segmentación basada en **ventanas de tiempo fijas con solapamiento** (*sliding windows*, ej. fragmentos de 5 a 10 segundos con un solapamiento de 2 segundos).
+* Segmentación basada en **cambios acústicos o semánticos** (detección de silencios, cambios de hablante mediante diarización, o transiciones musicales).
+
+
+* **Video (Chunking Espaciotemporal Híbrido):**
+* Es el más complejo, ya que combina tiempo y espacio. Se implementa mediante:
+1. *Detección de cambios de plano (Shot Boundary Detection):* Cortar el video en escenas coherentes basadas en diferencias visuales entre frames consecutivos.
+2. *Muestreo de fotogramas clave (Keyframes):* Extraer fotogramas representativos por escena (ej. 1 frame por segundo o keyframes por umbral de movimiento).
+3. *Sincronización con el audio:* Alinear los fragmentos de video con sus correspondientes ventanas de audio segmentadas.
+
+
+
+
+
+---
+
+## 3. Fase de Embedding / Vectorización (Incrustación)
+
+Una vez fragmentados los datos, cada unidad (parche de imagen, segmento de audio o escena de video) se pasa por **redes neuronales especializadas** (Encoders) que transforman la información perceptual en un vector denso de alta dimensionalidad (ej. 512, 768 o 1536 dimensiones).
+
+* **Modelos Visuales (Imágenes/Frames):** Se emplean arquitecturas como **CLIP (Contrastive Language-Image Pretraining)**, ViT o ResNet entrenadas para generar embeddings donde una imagen y su descripción textual compartan proximidad geométrica en el espacio vectorial.
+* **Modelos Acústicos (Audio):** Se utilizan modelos como **CLAP** (Contrastive Language-Audio Pretraining) o encoders derivados de Whisper para convertir ondas de audio o espectrogramas de Mel en vectores que capturan tanto contenido hablado como efectos de sonido y música.
+* **Modelos Multimodales Nativos (Video):** Se procesan secuencias de frames junto con el audio asociado mediante arquitecturas de fusión temprana o tardía (como Video-CLIP o modelos multimodales contemporáneos), generando vectores espacio-temporales unificados.
+
+---
+
+## 4. Almacenamiento e Indexación en la BBDD Vectorial
+
+Los vectores resultantes no se almacenan solos; se estructuran en la base de datos vectorial (como Qdrant, Milvus, ChromaDB o pgvector) acompañados de su **metadata asociativa**:
+
+* **Metadatos Estructurales:** Identificador del archivo original, marca de tiempo de inicio y fin (para video y audio), coordenadas espaciales (para regiones de imágenes).
+* **Metadatos Semánticos / Transcripciones:** Transcripciones de audio generadas por STT (Speech-to-Text), etiquetas de objetos detectados o resúmenes textuales de los frames.
+* **Indexación:** Se aplican algoritmos de indexación por vecindad aproximada (como **HNSW** - Hierarchical Navigable Small World o **IVF** - Inverted File Index) para permitir búsquedas por similitud de coseno o distancia euclidiana en milisegundos, incluso con millones de vectores multimodales.
+
+---
+
+¿Estás diseñando actualmente una arquitectura de recuperación multimodal (RAG) para un proyecto específico de procesamiento de video o audio que requiera optimizar la latencia en la fase de embedding?

@@ -1,0 +1,15 @@
+https://www.youtube.com/watch?v=cPFaMiGk5J0&t=499s
+
+https://ai.google.dev/gemini-api/docs/generate-content?hl=es-419
+
+https://ai.google.dev/gemini-api/docs/generate-content/api-key?hl=es-419
+
+PASO 1:
+Plantilla 4.1.5:
+"Actúa como asistente de análisis contractual. Lee el contrato adjunto y extrae en una tabla (asume la parte de 2THEMART.COM,): (1) tipo de cláusula, (2) texto citado textualmente (traducir al español), (3) página o sección, (4) nivel de riesgo (bajo/medio/alto) para la parte que representamos (traducir al español), (5) acción recomendada (en español). Si algún campo no aparece en el documento, indica 'no especificado' en vez de inferirlo."
+
+PASO 2:
+Se tendrán 5 contratos diferentes para ser analizados por el asistente de
+Clause IA.
+
+https://www.w3schools.com/
