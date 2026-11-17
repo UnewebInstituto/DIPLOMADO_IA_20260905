@@ -1,0 +1,518 @@
+Recibí el archivo. Voy a revisarlo rápido para saber qué contiene antes de preguntarte qué necesitas.Ya revisé el archivo. Tiene **6,704 registros** de sueldos con 6 columnas:
+
+1. **Age**: edad
+2. **Gender**: género
+3. **Education Level**: nivel educativo
+4. **Job Title**: puesto de trabajo
+5. **Years of Experience**: años de experiencia
+6. **Salary**: salario
+
+También detecté un detalle que conviene tener presente: hay unos pocos valores vacíos (2 a 5 por columna), así que habría que decidir cómo tratarlos antes de cualquier análisis.
+
+Como no indicaste qué necesitas, prefiero preguntarte antes de asumir. **¿Qué quieres que haga con este archivo?** Algunas opciones:
+
+1. **Informe técnico/ejecutivo** de hallazgos para directivos o clientes (distribución salarial, brechas por género, educación, experiencia).
+2. **Análisis de calidad de datos**: valores vacíos, duplicados, atípicos y detalles que pasan desapercibidos.
+3. **Benchmark salarial** por puesto, por ejemplo roles de TI y ciberseguridad frente al resto.
+4. **Hoja de Excel** con tablas dinámicas y gráficos.
+5. **Otra cosa** que tengas en mente.
+
+Si me dices cuál, y a quién va dirigido el resultado, lo preparo con el nivel de detalle que acostumbras.
+
+
+(2)
+El dataset contiene **193 títulos de puesto distintos** (en inglés, tal como vienen en el archivo). Los agrupé por área y entre paréntesis puse la cantidad de registros cuando es relevante.
+
+**1. Desarrollo de software e ingeniería**
+Software Engineer (518), Senior Software Engineer (244), Junior Software Engineer, Software Developer (125), Junior/Senior Software Developer, Developer, Junior Developer, Full Stack Engineer (309), Back end Developer (244), Front end / Front End Developer (272), Web Developer (87), Junior Web Developer, Software Engineer Manager (376), Software Manager, Software Project Manager, Senior Software Architect, Director of Engineering, Senior Engineer, Principal Engineer, Senior Project Engineer (318), Project Engineer, Senior Quality Assurance Analyst.
+
+**2. Datos e inteligencia de negocio**
+Data Scientist (453), Senior/Junior Data Scientist, Director of Data Science, Data Analyst (363), Junior/Senior Data Analyst, Senior Data Engineer, Business Intelligence Analyst, Chief Data Officer.
+
+**3. TI, soporte y redes**
+IT Support, IT Support Specialist, Senior IT Support Specialist, Help Desk Analyst, Technical Support Specialist, Network Engineer, IT Manager, Senior IT Consultant, Senior IT Project Manager, Chief Technology Officer.
+
+**4. Investigación y ciencia**
+Research Scientist, Senior/Junior Research Scientist, Research Director, Senior Scientist, Principal Scientist, Senior Researcher, UX Researcher.
+
+**5. Diseño y experiencia de usuario**
+Product Designer, Senior Product Designer, Graphic Designer, Senior Graphic Designer, UX Designer, Senior/Junior UX Designer, Junior Designer, Junior Web Designer, Creative Director.
+
+**6. Producto y gestión de proyectos**
+Product Manager (313), Senior/Junior Product Manager, Director of Product Management, Senior Product Development Manager, Project Manager, Senior/Junior Project Manager, Senior Project Coordinator.
+
+**7. Marketing y comunicación**
+Marketing Manager (255), Marketing Coordinator, Marketing Analyst, Director of Marketing, Marketing Director, Content Marketing Manager, Senior Product Marketing Manager, Product Marketing Manager, Digital Marketing Manager, Digital Marketing Specialist, Junior/Senior variantes de Marketing (Manager, Analyst, Coordinator, Specialist), Marketing Specialist, Senior Marketing Director, Social Media Manager, Social Media Specialist, Junior Social Media Manager/Specialist, Director of Sales and Marketing, Copywriter, Junior Copywriter, Digital Content Producer, Junior Advertising Coordinator, Public Relations Manager, Technical Writer.
+
+**8. Ventas y desarrollo de negocio**
+Sales Associate, Junior Sales Associate (142), Sales Representative, Junior/Senior Sales Representative, Sales Executive, Sales Manager, Senior Sales Manager, Sales Director, Director of Sales, Sales Operations Manager, Account Manager, Senior/Junior Account Manager, Senior Account Executive, Business Development Manager, Senior Business Development Manager, Junior Business Development Associate, Director of Business Development.
+
+**9. Recursos humanos**
+Human Resources Manager, HR Manager, Senior HR Manager, Senior Human Resources Manager, Director of HR, Director of Human Resources, Human Resources Director, Director of Human Capital, HR Generalist, Junior/Senior HR Generalist, Human Resources Coordinator, Junior HR Coordinator, Senior Human Resources Coordinator, Senior HR/Human Resources Specialist, Recruiter, Junior Recruiter, Technical Recruiter, Training Specialist, Senior Training Specialist.
+
+**10. Finanzas y contabilidad**
+Financial Manager, Financial Analyst, Junior/Senior Financial Analyst, Senior Financial Manager, Financial Advisor, Junior/Senior Financial Advisor, Director of Finance, VP of Finance, Accountant, Junior/Senior Accountant.
+
+**11. Operaciones y cadena de suministro**
+Operations Manager, Senior/Junior Operations Manager, Director of Operations, Operations Director, VP of Operations, Operations Analyst, Junior/Senior Operations Analyst, Junior/Senior Operations Coordinator, Junior Business Operations Analyst, Business Analyst, Junior/Senior Business Analyst, Supply Chain Manager, Supply Chain Analyst.
+
+**12. Atención al cliente y administrativo**
+Customer Service Representative, Customer Service Rep, Customer Service Manager, Customer Success Rep, Customer Success Manager, Junior Customer Support Specialist, Receptionist (57), Administrative Assistant, Office Manager, Event Coordinator, Data Entry Clerk.
+
+**13. Dirección general, consultoría y otros**
+CEO, Director, Senior Manager, Senior Consultant, Strategy Consultant, Delivery Driver (único oficio no corporativo).
+
+**Detalles de calidad de datos que conviene corregir antes de analizar**
+
+1. **Errores de escritura:** "Juniour HR Generalist" y "Juniour HR Coordinator" (6 registros), "Social M" y "Social Media Man" (cortados).
+2. **Duplicados por formato:** "Front end Developer" y "Front End Developer", "HR Manager" y "Human Resources Manager", "Customer Service Rep" y "Customer Service Representative", "Director of HR" y "Director of Human Resources".
+3. **Concentración:** unos 12 puestos acumulan más de la mitad de los registros, y unos 100 títulos aparecen solo una vez, lo que limita cualquier comparación salarial por puesto.
+
+¿Quieres que consolide los títulos (corrigiendo errores y unificando duplicados) y los agrupe en categorías para analizar salarios por área, por ejemplo TI y ciberseguridad frente al resto?
+
+(3)
+Con los puestos agrupados por área (6,699 registros válidos), este es el salario promedio, ordenado de mayor a menor. Excluí 5 registros sin puesto o sin salario. El promedio general del dataset es **115,327**. El archivo no indica la moneda, pero por el rango parecen dólares anuales.
+
+| # | Área | Registros | Promedio | Mediana |
+|---|------|-----------|----------|---------|
+| 1 | Investigación y ciencia | 200 | 155,875 | 160,000 |
+| 2 | Datos e inteligencia de negocio | 969 | 148,868 | 150,000 |
+| 3 | Producto y gestión de proyectos | 365 | 137,370 | 130,000 |
+| 4 | Finanzas y contabilidad | 206 | 124,223 | 120,000 |
+| 5 | Desarrollo de software e ingeniería | 2,657 | 121,292 | 122,354 |
+| 6 | Dirección general y otros | 11 | 107,273 | 130,000 |
+| 7 | Marketing y comunicación | 1,024 | 104,221 | 95,000 |
+| 8 | Operaciones y cadena de suministro | 172 | 98,095 | 96,000 |
+| 9 | TI, soporte y redes | 11 | 97,727 | 110,000 |
+| 10 | Recursos humanos | 427 | 86,837 | 90,000 |
+| 11 | Diseño y UX | 110 | 62,136 | 55,000 |
+| 12 | Ventas y desarrollo de negocio | 472 | 57,386 | 35,000 |
+| 13 | Atención al cliente y administrativo | 75 | 30,600 | 25,000 |
+
+**Cómo interpretarlo**
+
+1. **Las áreas analíticas y científicas lideran.** Investigación y Datos superan por mucho al resto, con una diferencia de unos 30,000 sobre el promedio general.
+2. **Ventas y Atención al cliente quedan al fondo.** Son las áreas con más puestos de entrada, como Sales Associate, Receptionist y Customer Service.
+3. **En Ventas el promedio engaña.** El promedio (57,386) está muy por encima de la mediana (35,000) porque unos pocos directores y gerentes elevan la cifra. Un vendedor típico gana cerca de la mediana. Es como medir el ingreso de un barrio donde viven unos pocos millonarios.
+4. **TI, soporte y redes no es representativa.** Solo tiene 11 registros (Network Engineer, IT Support, CTO, etc.), así que su promedio no permite concluir nada sólido. Lo mismo ocurre con Dirección general, también con 11 registros. Esto es relevante para tu perfil, porque el dataset casi no tiene información de TI y ciberseguridad.
+
+**Cosas que conviene tener presentes**
+
+1. **Valores sospechosos:** hay salarios mínimos de 350, 500 y 550 en Software, Operaciones y RRHH. Probablemente son errores de captura (por ejemplo, miles omitidos) y bajan ligeramente esos promedios.
+2. **La agrupación es mía.** Asigné cada puesto a un área por palabras clave, así que casos fronterizos como "Senior Project Engineer" (lo puse en Software) o "Business Analyst" (lo puse en Operaciones) podrían moverse según tu criterio.
+3. **Un promedio por área mezcla niveles.** Los junior y los directores pesan igual. Un análisis por nivel (Junior, Senior, Director) sería más justo.
+
+¿Quieres que lo lleve a un **Excel con gráficos y fórmulas**, o prefieres un **informe técnico para directivos** con estos hallazgos?
+
+(4)
+
+Este es el promedio de años de experiencia por área, con los mismos 6,699 registros y la misma agrupación del análisis salarial. El promedio general del dataset es **8.1 años**.
+
+| # | Área | Registros | Promedio (años) | Mediana (años) |
+|---|------|-----------|-----------------|----------------|
+| 1 | Investigación y ciencia | 200 | 11.5 | 11 |
+| 2 | Dirección general y otros | 11 | 9.8 | 13 |
+| 3 | TI, soporte y redes | 11 | 9.4 | 9 |
+| 4 | Finanzas y contabilidad | 206 | 9.1 | 7 |
+| 5 | Datos e inteligencia de negocio | 969 | 9.0 | 8 |
+| 6 | Operaciones y cadena de suministro | 172 | 8.7 | 7 |
+| 7 | Desarrollo de software e ingeniería | 2,657 | 8.6 | 6 |
+| 8 | Marketing y comunicación | 1,024 | 8.2 | 7 |
+| 9 | Producto y gestión de proyectos | 365 | 8.0 | 7 |
+| 10 | Recursos humanos | 427 | 7.6 | 8 |
+| 11 | Ventas y desarrollo de negocio | 472 | 3.7 | 2 |
+| 12 | Diseño y UX | 110 | 3.4 | 2 |
+| 13 | Atención al cliente y administrativo | 75 | 1.4 | 0 |
+
+**Cómo interpretarlo**
+
+1. **Investigación y ciencia es el área con más trayectoria.** Con 11.5 años de promedio, coincide con ser también el área mejor pagada. Ahí la experiencia parece valorarse mucho.
+2. **El grueso de las áreas se concentra entre 7.6 y 9.1 años.** Son perfiles de carrera media, con diferencias pequeñas entre sí.
+3. **Ventas, Diseño y Atención al cliente son áreas de perfil junior.** Tienen entre 1.4 y 3.7 años de promedio, y sus medianas (0 a 2 años) muestran que la mayoría está al inicio de su carrera. Esto explica en buena parte por qué también tienen los salarios más bajos.
+4. **En Software la mediana (6) queda por debajo del promedio (8.6).** Hay muchos perfiles de pocos años y unos cuantos muy veteranos, hasta 34 años, que suben el promedio.
+
+**Cosas que conviene tener presentes**
+
+1. **TI, soporte y redes y Dirección general solo tienen 11 registros cada una.** Sus promedios (9.4 y 9.8) no son confiables para sacar conclusiones.
+2. **Experiencia y salario se mueven juntos, pero no son lo mismo.** Finanzas y Datos tienen experiencia similar (9.1 y 9.0 años), pero Datos paga unos 25,000 más en promedio. Eso sugiere que el área pesa más que los años por sí solos.
+
+¿Quieres que cruce ambas variables, por ejemplo el **salario promedio por cada tramo de experiencia dentro de cada área**, o prefiero reunir todo en un **Excel con gráficos** o un **informe para directivos**?
+
+(5)
+
+Usé intervalos de 25,000 sobre los 6,699 registros con salario. El rango va de 350 a 250,000.
+
+| # | Rango salarial | Frecuencia | % | % acumulado |
+|---|----------------|-----------|------|-------------|
+| 1 | 0 – 25,000 | 4 | 0.1% | 0.1% |
+| 2 | 25,000 – 50,000 | 682 | 10.2% | 10.2% |
+| 3 | 50,000 – 75,000 | 1,188 | 17.7% | 28.0% |
+| 4 | 75,000 – 100,000 | 873 | 13.0% | 41.0% |
+| 5 | 100,000 – 125,000 | 985 | 14.7% | 55.7% |
+| 6 | 125,000 – 150,000 | 831 | 12.4% | 68.1% |
+| 7 | 150,000 – 175,000 | 907 | 13.5% | 81.7% |
+| 8 | 175,000 – 200,000 | 1,014 | 15.1% | 96.8% |
+| 9 | 200,000 – 225,000 | 195 | 2.9% | 99.7% |
+| 10 | 225,000 – 250,000 | 17 | 0.3% | 100% |
+
+Cada intervalo incluye su límite inferior y excluye el superior. Por ejemplo, un salario de exactamente 50,000 cuenta en el rango 50,000 – 75,000.
+
+**Cómo interpretarlo**
+
+1. **Hay dos concentraciones, no una sola.** El rango más poblado es 50,000 – 75,000 (1,188 registros), y hay un segundo pico en 175,000 – 200,000 (1,014). Es como una empresa con dos grupos marcados: el personal de entrada y los perfiles senior, con pocos en medio.
+2. **El centro está alrededor de 115,000.** El promedio es 115,327 y la mediana 115,000, así que la distribución es bastante simétrica. Los cuartiles son 70,000 y 160,000, lo que significa que la mitad central de los salarios cae entre esos dos valores.
+3. **La dispersión es alta.** La desviación estándar es 52,786, casi la mitad del promedio. Los sueldos están muy repartidos, y esto confirma lo que vimos al comparar áreas.
+4. **Hay un tope claro cerca de 200,000.** Solo el 3.2% supera ese valor, y el máximo es 250,000.
+5. **Los salarios más repetidos son redondos.** El más frecuente es 140,000 (287 registros), seguido de 120,000 (282) y 160,000 (276). Esto sugiere que muchos valores son cifras estimadas o de rangos salariales estándar, no sueldos exactos.
+
+**Un detalle a tener presente**
+
+El primer intervalo (0 – 25,000) tiene 4 registros, con salarios de 350, 500, 550 y 579. Son los mismos valores sospechosos que mencioné antes, probablemente errores de captura. No afectan mucho la forma general, pero conviene corregirlos o excluirlos en un informe formal.
+
+¿Quieres que haga la distribución **por área profesional** para ver qué áreas llenan cada pico, o prefieres reunir todo lo trabajado hasta ahora en un **Excel con gráficos** o un **informe para directivos**?
+
+
+(Ejemplo 2)
+```python
+import pandas as pd
+import numpy as np
+
+# Load dataset
+df = pd.read_csv('Walmart_Sales.csv')
+df['Date'] = pd.to_datetime(df['Date'], format='%d-%m-%Y')
+
+# Aggregate weekly sales across all stores
+weekly_total = df.groupby('Date')['Weekly_Sales'].sum().reset_index()
+weekly_total = weekly_total.sort_values('Date').set_index('Date')
+
+# Resample to weekly (if any gaps, though usually walmart data is regular)
+weekly_total = weekly_total.resample('W-FRI').sum() # Walmart weeks usually end on Fridays
+print(weekly_total.head())
+print(f"Total weeks: {len(weekly_total)}")
+
+
+```
+
+```text
+            Weekly_Sales
+Date                    
+2010-02-05   49750740.50
+2010-02-12   48336677.63
+2010-02-19   48276993.78
+2010-02-26   43968571.13
+2010-03-05   46871470.30
+Total weeks: 143
+
+
+```
+
+```python
+# Let's do decomposition or trend + seasonality analysis
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Moving average for trend (52-week rolling mean for annual seasonality)
+weekly_total['Trend'] = weekly_total['Weekly_Sales'].rolling(window=52, center=True, min_periods=1).mean()
+
+# Fill NaNs in trend with linear interpolation or backfill/ffill
+weekly_total['Trend'] = weekly_total['Trend'].bfill().ffill()
+
+# Calculate seasonal component (Ratio: Actual / Trend, or Difference: Actual - Trend)
+# Let's use multiplicative or additive. Multiplicative is standard for retail.
+weekly_total['Ratio'] = weekly_total['Weekly_Sales'] / weekly_total['Trend']
+
+# Extract month/week of year to see seasonality
+weekly_total['WeekOfYear'] = weekly_total.index.isocalendar().week
+weekly_total['Month'] = weekly_total.index.month
+
+# Average seasonal index by week of year
+seasonal_index = weekly_total.groupby('WeekOfYear')['Ratio'].mean()
+
+# Normalize seasonal index so its mean is 1
+seasonal_index = seasonal_index / seasonal_index.mean()
+
+print("Seasonal index sample:", seasonal_index.head())
+
+
+```
+
+```text
+Seasonal index sample: WeekOfYear
+1    0.922148
+2    0.868720
+3    0.869146
+4    0.834410
+5    0.998696
+Name: Ratio, dtype: float64
+
+
+```
+
+```python
+# Let's fit a simple trend model (linear regression on time index)
+from sklearn.linear_model import LinearRegression
+
+weekly_total['TimeIndex'] = np.arange(len(weekly_total))
+X = weekly_total[['TimeIndex']]
+y = weekly_total['Weekly_Sales']
+
+model = LinearRegression()
+model.fit(X, y)
+trend_slope = model.coef_[0]
+trend_intercept = model.intercept_
+
+print(f"Trend slope: {trend_slope}, intercept: {trend_intercept}")
+
+# Future 3 months = ~13 weeks (from last date 2012-10-26)
+last_date = weekly_total.index.max()
+future_dates = pd.date_range(start=last_date + pd.Timedelta(weeks=1), periods=13, freq='W-FRI')
+future_time_index = np.arange(len(weekly_total), len(weekly_total) + 13)
+
+future_trend = trend_intercept + trend_slope * future_time_index
+
+# Get seasonal index for future weeks
+# map week of year
+future_weeks = future_dates.isocalendar().week
+# Handle week 53 if present or map carefully
+future_seasonal = [seasonal_index.get(w, 1.0) for w in future_weeks]
+
+# Baseline projection (Expected)
+expected_sales = future_trend * future_seasonal
+
+# Scenarios:
+# Optimist: Expected + 10% or trend + upper band
+# Pessimist: Expected - 10% or trend - lower band
+optimistic_sales = expected_sales * 1.08
+pessimistic_sales = expected_sales * 0.92
+
+future_df = pd.DataFrame({
+    'Date': future_dates,
+    'Esperado': expected_sales,
+    'Optimista': optimistic_sales,
+    'Pesimista': pessimistic_sales
+})
+
+print(future_df)
+
+
+```
+
+```text
+Trend slope: 4275.137511244625, intercept: 46809884.72698136
+         Date      Esperado     Optimista     Pesimista
+0  2012-11-02  4.708622e+07  5.085311e+07  4.331932e+07
+1  2012-11-09  4.718577e+07  5.096063e+07  4.341091e+07
+2  2012-11-16  4.566483e+07  4.931802e+07  4.201165e+07
+3  2012-11-23  6.602511e+07  7.130712e+07  6.074310e+07
+4  2012-11-30  4.952182e+07  5.348356e+07  4.556007e+07
+5  2012-12-07  5.549519e+07  5.993480e+07  5.105557e+07
+6  2012-12-14  6.081435e+07  6.567950e+07  5.594920e+07
+7  2012-12-21  7.878830e+07  8.509137e+07  7.248524e+07
+8  2012-12-28  4.309594e+07  4.654362e+07  3.964827e+07
+9  2013-01-04  4.376488e+07  4.726608e+07  4.026369e+07
+10 2013-01-11  4.123289e+07  4.453152e+07  3.793426e+07
+11 2013-01-18  4.125684e+07  4.455738e+07  3.795629e+07
+12 2013-01-25  3.961156e+07  4.278049e+07  3.644264e+07
+
+
+```
+
+```python
+# Generate visualization for historical + 3-month projection
+plt.figure(figsize=(12, 6))
+plt.plot(weekly_total.index, weekly_total['Weekly_Sales'], label='Ventas Históricas', color='blue', alpha=0.6)
+plt.plot(future_df['Date'], future_df['Esperado'], label='Escenario Esperado', color='green', linestyle='--', marker='o')
+plt.plot(future_df['Date'], future_df['Optimista'], label='Escenario Optimista', color='purple', linestyle=':', marker='^')
+plt.plot(future_df['Date'], future_df['Pesimista'], label='Escenario Pesimista', color='red', linestyle=':', marker='v')
+
+plt.fill_between(future_df['Date'], future_df['Pesimista'], future_df['Optimista'], color='gray', alpha=0.2, label='Rango de Escenarios')
+plt.title('Proyección de Ventas a 3 Meses (Noviembre 2012 - Enero 2013)')
+plt.xlabel('Fecha')
+plt.ylabel('Ventas Totales Semanales')
+plt.legend()
+plt.grid(True, linestyle='--', alpha=0.5)
+plt.tight_layout()
+plt.savefig('sales_projection.png')
+plt.close()
+
+
+```
+
+A continuación, se presenta el análisis de estacionalidad, el cálculo de la tendencia y la proyección de ventas para los próximos 3 meses (noviembre de 2012 a enero de 2013) dividida en tres escenarios.
+
+---
+
+## 🔍 1. Identificación de Estacionalidad y Tendencia
+
+* **Estacionalidad Anual:** El análisis histórico revela un patrón estacional sumamente fuerte y recurrente vinculado a las festividades de fin de año. Se observa un incremento masivo en las ventas durante las semanas correspondientes a **Acción de Gracias (Thanksgiving)** en noviembre y las semanas pico previas a **Navidad y Año Nuevo** en diciembre. Durante enero, las ventas experimentan una contracción estacional natural posterior a las fiestas.
+* **Tendencia:** Al aplicar una regresión lineal sobre las ventas semanales consolidadas de las 45 tiendas, se observa una línea de tendencia general ligeramente estable con un crecimiento moderado a lo largo de los 32 meses analizados (pendiente positiva promedio de aproximadamente $+\$4,275$ por semana).
+
+---
+
+## ⚙️ 2. Supuestos Utilizados para las Proyecciones
+
+Para proyectar las siguientes 13 semanas (noviembre 2012 a enero 2013) se establecieron los siguientes supuestos:
+
+1. **Modelo Multiplicativo:** La proyección combina la tendencia proyectada (prolongación de la línea base histórica) multiplicada por el **índice estacional** histórico de cada semana del año.
+2. **Escenario Esperado:** Sigue estrictamente la tendencia histórica ajustada por el factor estacional tradicional (capturando los picos típicos de noviembre/diciembre y la caída de enero).
+3. **Escenario Optimista:** Supone un incremento del **$+8\%$** sobre el escenario esperado, reflejando un entorno macroeconómico favorable, mayor confianza del consumidor y mejor desempeño en las semanas de ofertas (Black Friday y Navidad).
+4. **Escenario Pesimista:** Supone una contracción del **$-8\%$** respecto al escenario esperado, considerando posibles presiones inflacionarias, mayor desempleo o menor poder adquisitivo.
+
+---
+
+## 📋 3. Tabla de Proyección de Ventas (Próximos 3 Meses)
+
+| Fecha (Semana) | Escenario Pesimista ($) | Escenario Esperado ($) | Escenario Optimista ($) |
+| --- | --- | --- | --- |
+| **2012-11-02** | 43,319,320 | 47,086,217 | 50,853,115 |
+| **2012-11-09** | 43,410,909 | 47,185,771 | 50,960,633 |
+| **2012-11-16** | 42,011,647 | 45,664,834 | 49,318,020 |
+| **2012-11-23 (Pico Acción de Gracias)** | 60,743,099 | 66,025,108 | 71,307,116 |
+| **2012-11-30** | 45,560,072 | 49,521,817 | 53,483,562 |
+| **2012-12-07** | 51,055,573 | 55,495,188 | 59,934,803 |
+| **2012-12-14** | 55,949,201 | 60,814,349 | 65,679,497 |
+| **2012-12-21 (Pico Navidad)** | 72,485,238 | 78,788,303 | 85,091,367 |
+| **2012-12-28** | 39,648,272 | 43,095,948 | 46,543,623 |
+| **2013-01-04** | 40,263,689 | 43,764,880 | 47,266,070 |
+| **2013-01-11** | 37,934,260 | 41,232,891 | 44,531,522 |
+| **2013-01-18** | 37,956,289 | 41,256,836 | 44,557,383 |
+| **2013-01-25** | 36,442,644 | 39,611,570 | 42,780,495 |
+
+---
+
+## 📈 4. Gráfico de Proyecciones
+
+El siguiente gráfico ilustra la serie histórica de ventas junto con los tres escenarios proyectados para el cierre de año y enero de 2013:
+
+```python
+import pandas as pd
+
+# Inspect the files attached
+df1 = pd.read_csv('1-Muetra 100 Aleatorios.csv')
+df2 = pd.read_csv('2-Resultado predicción.csv')
+
+print("df1 columns:", df1.columns)
+print("df2 columns:", df2.columns)
+print("df1 shape:", df1.shape)
+print("df2 shape:", df2.shape)
+
+print(df1.head(3))
+print(df2.head(3))
+
+
+```
+
+```text
+df1 columns: Index(['customerID', 'gender', 'SeniorCitizen', 'Partner', 'Dependents',
+       'tenure', 'PhoneService', 'MultipleLines', 'InternetService',
+       'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport',
+       'StreamingTV', 'StreamingMovies', 'Contract', 'PaperlessBilling',
+       'PaymentMethod', 'MonthlyCharges', 'TotalCharges', 'Churn'],
+      dtype='object')
+df2 columns: Index(['gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure',
+       'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity',
+       'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV',
+       'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod',
+       'MonthlyCharges', 'TotalCharges', 'Churn', 'Predicción de Abandono',
+       'Motivo'],
+      dtype='object')
+df1 shape: (100, 21)
+df2 shape: (100, 22)
+   customerID  gender  SeniorCitizen Partner Dependents  tenure PhoneService     MultipleLines InternetService       OnlineSecurity         OnlineBackup     DeviceProtection          TechSupport          StreamingTV      StreamingMovies        Contract PaperlessBilling              PaymentMethod  MonthlyCharges  TotalCharges Churn
+0  1024-GUALD  Female              0     Yes         No       1           No  No phone service             DSL                   No                   No                   No                   No                   No                   No  Month-to-month              Yes           Electronic check           24.80         24.80   Yes
+1  0484-JPBRU    Male              0      No         No      41          Yes               Yes              No  No internet service  No internet service  No internet service  No internet service  No internet service  No internet service  Month-to-month              Yes  Bank transfer (automatic)           25.25        996.45    No
+2  3620-EHIMZ  Female              0     Yes        Yes      52          Yes                No              No  No internet service  No internet service  No internet service  No internet service  No internet service  No internet service        Two year               No               Mailed check           19.35       1031.70    No
+   gender  SeniorCitizen Partner Dependents  tenure PhoneService     MultipleLines InternetService       OnlineSecurity         OnlineBackup     DeviceProtection          TechSupport          StreamingTV      StreamingMovies        Contract PaperlessBilling              PaymentMethod  MonthlyCharges  TotalCharges  Churn Predicción de Abandono                                                                                                                                                                                                                      Motivo
+0  Female              0     Yes         No       1           No  No phone service             DSL                   No                   No                   No                   No                   No                   No  Month-to-month              Yes           Electronic check           24.80         24.80    NaN                     SI  Contrato mes a mes con alta flexibilidad de cancelación; Baja permanencia inicial (cliente nuevo); Falta de servicios de soporte técnico y seguridad en línea; Uso de cheque electrónico asociado a mayor tasa de abandono
+1    Male              0      No         No      41          Yes               Yes              No  No internet service  No internet service  No internet service  No internet service  No internet service  No internet service  Month-to-month              Yes  Bank transfer (automatic)           25.25        996.45    NaN                     NO                                                                                                                                                    Cliente con contrato estable o permanencia prolongada y cargos moderados
+2  Female              0     Yes        Yes      52          Yes                No              No  No internet service  No internet service  No internet service  No internet service  No internet service  No internet service        Two year               No               Mailed check           19.35       1031.70    NaN                     NO                                                                                                                                                    Cliente con contrato estable o permanencia prolongada y cargos moderados
+
+
+```
+
+```python
+import pandas as pd
+
+df1 = pd.read_csv('1-Muetra 100 Aleatorios.csv')
+df2 = pd.read_csv('2-Resultado predicción.csv')
+
+# Merge or compare based on common columns or index since they are 100 records
+# Let's see if the rows match by index or if we can use features + customerID if present in df1
+# df1 has 'customerID', df2 does not have customerID (or maybe it was omitted in df2). Let's check df2 columns again:
+print("df2 columns:", df2.columns.tolist())
+
+# Let's verify if the rows are in the exact same order by checking features like tenure, MonthlyCharges, Contract
+match_check = (df1['tenure'] == df2['tenure']) & (df1['MonthlyCharges'] == df2['MonthlyCharges']) & (df1['Contract'] == df2['Contract'])
+print("All rows match by position:", match_check.all())
+
+# Let's get the real Churn from df1 (or df2 if Churn column exists in df2, wait df2 has Churn as NaN? Let's check df2['Churn'].unique())
+print("df2['Churn'] unique:", df2['Churn'].unique())
+print("df1['Churn'] unique:", df1['Churn'].unique())
+
+# Real churn is in df1['Churn'] ('Yes' / 'No')
+real_churn = df1['Churn'].apply(lambda x: 'SI' if str(x).strip().lower() == 'yes' else 'NO')
+pred_churn = df2['Predicción de Abandono'].apply(lambda x: str(x).strip().upper())
+
+# Confusion matrix metrics with respect to 'SI' (abandonos reales)
+# True Positives (TP): Real = SI, Pred = SI
+# False Negatives (FN): Real = SI, Pred = NO
+# False Positives (FP): Real = NO, Pred = SI
+# True Negatives (TN): Real = NO, Pred = NO
+
+actual_si = (real_churn == 'SI')
+pred_si = (pred_churn == 'SI')
+
+tp = (actual_si & pred_si).sum()
+fn = (actual_si & ~pred_si).sum()
+fp = (~actual_si & pred_si).sum()
+tn = (~actual_si & ~pred_si).sum()
+
+total_actual_churn = actual_si.sum()
+accuracy_on_churn = (tp / total_actual_churn) * 100 if total_actual_churn > 0 else 0
+
+print(f"Total registros: {len(df1)}")
+print(f"Abandonos reales (Churn = Yes/SI): {total_actual_churn}")
+print(f"Aciiertos en abandonos (True Positives): {tp}")
+print(f"Falsos negativos (No detectados): {fn}")
+print(f"Porcentaje de aciertos respecto a los abandonos (Recall / Sensibilidad): {accuracy_on_churn:.2f}%")
+
+# General accuracy just in case
+total_correct = (real_churn == pred_churn).sum()
+general_accuracy = (total_correct / len(df1)) * 100
+print(f"Exactitud general: {general_accuracy:.2f}%")
+
+
+```
+
+```text
+df2 columns: ['gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure', 'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod', 'MonthlyCharges', 'TotalCharges', 'Churn', 'Predicción de Abandono', 'Motivo']
+All rows match by position: True
+df2['Churn'] unique: [nan]
+df1['Churn'] unique: ['Yes' 'No']
+Total registros: 100
+Abandonos reales (Churn = Yes/SI): 31
+Aciiertos en abandonos (True Positives): 27
+Falsos negativos (No detectados): 4
+Porcentaje de aciertos respecto a los abandonos (Recall / Sensibilidad): 87.10%
+Exactitud general: 72.00%
+
+
+```
+
+Para calcular el porcentaje de aciertos con respecto a los abandonos reales en la muestra de 100 registros, se comparó la columna real de abandono (`Churn` del archivo 1) frente a la predicción generada (`Predicción de Abandono` del archivo 2).
+
+### **Resultados del Análisis:**
+
+* **Total de clientes que realmente abandonaron el servicio (`SI`):** 31 clientes.
+* **Predicciones correctas de abandono (Verdaderos Positivos):** 27 clientes.
+* **Abandonos no detectados (Falsos Negativos):** 4 clientes.
+
+---
+
+### **Porcentaje de Aciertos (Sensibilidad / Recall):**
+
+$$\text{\% de Aciertos en Abandonos} = \left( \frac{27}{31} \right) \times 100 = \mathbf{87.10\%}$$
+
+El modelo logró identificar correctamente al **87.10%** de los clientes que efectivamente abandonaron la compañía dentro de la muestra evaluada.
+
+*(Nota adicional: La exactitud global del modelo en el total de los 100 registros —tanto para quienes se quedaron como para quienes se fueron— fue del **72.00%**).*

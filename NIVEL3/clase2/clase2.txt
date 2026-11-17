@@ -1,0 +1,25 @@
+Repaso de Clase 1
+1) Obtención de conjunto de datos desde
+www.kaggle.com (Descargar)
+
+https://www.kaggle.com/datasets/mohithsairamreddy/salary-data
+
+2) Acceder a Claude IA y cargar el archivo
+
+
+Ejemplo 2.
+https://www.kaggle.com/search?q=churn+in%3Adatasets
+
+Del conjunto de datos cargado, genera una muestra de 100 registros aleatorios,
+en un archivo de formato csv, colocando en la primera fila la identificación de
+sus columnas.
+
+PROMPT:
+A partir del archivo anexo, genera un nuevo archivo csv, que incluye dos
+columnas, la primera con el título "Predicción de Abandono", donde se debe
+indicar "SI" para quien abandonará y una segunda columna identificada como
+"Motivo", donde se deben describir las razones que argumentan el motivo de
+abandono.
+
+PROMPT:
+Dame el % de aciertos con respecto a la cantidad de abandonos, tomando como referencia la muestra de los 100 registros aleatorios de acuerdo al resultado obtenido. Se anexan ambos archivos.

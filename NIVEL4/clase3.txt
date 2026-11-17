@@ -1,0 +1,78 @@
+Como experto en Inteligencia Artificial, con gusto te presento una explicación detallada de estos conceptos fundamentales y su estado actual en los principales modelos del mercado.
+
+---
+
+### 1. Token
+
+Un **token** es la unidad básica en la que un modelo de lenguaje (LLM) procesa y comprende el texto. A diferencia de los seres humanos, las inteligencias artificiales no leen letras individuales ni palabras completas de forma directa; en su lugar, dividen el texto en fragmentos llamados tokens mediante un proceso conocido como *tokenización*.
+
+* **Equivalencia:** Un token no equivale exactamente a una palabra. Como regla general en los idiomas occidentales, **1 token equivale aproximadamente a 4 caracteres** o a 0.75 palabras (es decir, 100 tokens son unas 75 palabras, y 1,000 tokens equivalen aproximadamente a 750 palabras).
+* **Funcionamiento:** Las palabras comunes suelen ser un solo token, mientras que las palabras complejas, técnicas o los términos en otros idiomas se dividen en varias subpalabras. Los números y los símbolos de código también se descomponen en múltiples tokens.
+
+---
+
+### 2. Ventana de Contexto (Context Window)
+
+La **ventana de contexto** se refiere a la capacidad total de memoria a corto plazo que un modelo puede retener y procesar **de una sola vez** en una interacción o solicitud (prompt).
+
+* **Qué incluye:** Abarca todo lo que se encuentra activo en el flujo de la conversación: las instrucciones del sistema (*system prompts*), el historial completo de mensajes previos (tanto las preguntas del usuario como las respuestas de la IA), los archivos, documentos o imágenes adjuntos, y los "tokens de razonamiento" que utiliza el modelo en segundo plano antes de responder.
+* **Por qué es importante:** Si una conversación o un documento adjunto supera la ventana de contexto máxima, el modelo comienza a "olvidar" o descartar los datos más antiguos del inicio de la sesión para hacerle espacio a la información nueva.
+
+---
+
+### 3. Comparativa de la Ventana de Contexto: Gemini vs. Claude vs. ChatGPT
+
+Las tres plataformas líderes del mercado abordan la gestión del contexto con diferentes enfoques arquitectónicos y límites según su uso en la interfaz web frente a sus APIs para desarrolladores:
+
+| Característica / Plataforma | Google Gemini | Anthropic Claude | OpenAI ChatGPT |
+| --- | --- | --- | --- |
+| **Enfoque Principal** | Masiva capacidad nativa multimodal para procesar libros enteros, videos y código masivo de una vez. | Altísima precisión de recuperación a escala y gestión avanzada de proyectos y bases de conocimiento. | Equilibrio entre velocidad de chat estándar y razonamiento profundo en modelos especializados. |
+| **Capacidad Máxima (API / Modelos Pro)** | **1,000,000 de tokens** (aprox. 750,000 palabras) en sus modelos avanzados (como la familia Gemini Pro/Argon). | **1,000,000 de tokens** en sus modelos de vanguardia (ej. Opus 5.5, Sonnet 5.5). | **1,050,000 tokens** en su API para desarrolladores (modelos GPT-6). |
+| **Límites en la Interfaz Web (Usuario Final)** | Los planes avanzados (*Advanced/Pro*) operan con la ventana completa de **1 millón de tokens**, permitiendo subir videos largos o repositorios enteros de código. | En la interfaz web (*claude.ai*), los chats estándar con modelos insignia soportan hasta **500,000 tokens** con compactación automática. | Varía según el modelo y plan: Los modelos de razonamiento avanzado operan entre **256K y 400K tokens**, mientras que los chats instantáneos (*Plus/Business*) manejan **54K tokens**. |
+| **Características Destacadas** | Excelente integración nativa de audio, video y texto masivo de extremo a extremo. | Funciones de *Prompt Caching* muy eficientes para reducir costos al reutilizar contextos repetitivos. | Separación entre modelos "Instantáneos" y "de Razonamiento" (como la serie o/o1/o3) que consumen más contexto interno para pensar. |
+
+
+**Sí, de manera directa y significativa.** Cada vez que envías un nuevo mensaje en una sesión de chat, la gran mayoría de las interfaces y APIs de los modelos de lenguaje (LLM) **reenvían todo el historial previo** de la conversación junto con tu nuevo mensaje.
+
+A continuación se detalla cómo afecta este comportamiento:
+
+* **Funcionamiento "sin estado" (*Stateless*):** Por naturaleza, los LLM no recuerdan interacciones anteriores por sí mismos. Para simular una conversación fluida, cada nueva petición (*prompt*) debe incluir como contexto de entrada (*input*) todos los turnos anteriores (tanto tus preguntas como las respuestas de la IA).
+* **Crecimiento acumulativo:** A medida que la conversación avanza, el número de tokens de entrada crece turno a turno. Si en el turno 1 envías 50 tokens, en el turno 2 se enviarán los 50 anteriores más los nuevos, y así sucesivamente.
+* **Agotamiento de la Ventana de Contexto:** Un histórico muy largo consume rápidamente el límite máximo de tokens que el modelo puede retener, lo que eventualmente provocará que el sistema empiece a descartar o "olvidar" los mensajes del principio de la charla.
+* **Impacto en costos (APIs):** En entornos de desarrollo y consumo por API, cada nueva interacción te cobra no solo por los tokens de tu pregunta actual, sino por **todo el historial acumulado** que se vuelve a procesar, elevando el costo por mensaje (a menos que se utilicen técnicas de optimización como el *Prompt Caching*).
+
+
+El **Prompt Caching** (almacenamiento en caché de prompts) es una técnica de optimización que permite a los modelos de lenguaje guardar en memoria temporal los cálculos matemáticos intermedios (*estados KV* o *Key-Value tensors*) de un bloque de contexto largo y reutilizarlos en llamadas posteriores, evitando tener que procesar todo el texto desde cero en cada turno.
+
+Esto no solo reduce drásticamente el **costo por token** (generalmente entre un 75 % y un 90 % de descuento sobre el precio de entrada estándar), sino que también disminuye la **latencia** (el tiempo que tarda el modelo en empezar a responder).
+
+---
+
+### Cómo funciona internamente
+
+En una arquitectura Transformer, cuando envías un prompt largo, el modelo calcula representaciones matemáticas (*atención*) para cada token. Sin caché, este cálculo se repite íntegramente cada vez que envías el historial acumulado.
+
+Con **Prompt Caching**:
+
+1. **Primera llamada (Cache Write):** Envías el bloque base (por ejemplo, instrucciones extensas, un libro, código fuente o el historial acumulado hasta ese momento). El modelo procesa los tokens, guarda su estado interno en una memoria caché de alta velocidad y cobra una tarifa de escritura ligeramente superior o estándar.
+2. **Llamadas posteriores (Cache Read / Hit):** En los siguientes turnos, envías el mismo prefijo exacto más tu nueva pregunta. El sistema detecta que el inicio coincide, carga los estados ya calculados desde la caché y **solo procesa matemáticamente los tokens nuevos** del final.
+
+---
+
+### Comparativa: Claude vs. Gemini
+
+Aunque el principio técnico es el mismo, Anthropic y Google implementan el caché de formas distintas en sus APIs:
+
+| Característica | Anthropic Claude | Google Gemini |
+| --- | --- | --- |
+| **Tipo de activación** | **Explícita mediante puntos de control:** Se marca hasta qué bloque del mensaje debe guardarse mediante un parámetro (`cache_control: {"type": "ephemeral"}`) en la estructura del JSON. | **Automática (Implícita) y Explícita:** Gemini ofrece caché implícito automático para prefijos repetidos, además de *Context Caching* explícito donde creas un objeto de caché independiente con un ID (`cachedContent`). |
+| **Tiempo de vida (TTL)** | **5 minutos** por defecto (se renueva automáticamente cada vez que hay un *Cache Hit*). También ofrece una opción extendida de **1 hora** para flujos más pausados. | **60 minutos** por defecto en el caché explícito, aunque el desarrollador puede configurar el TTL personalizado según sus necesidades. |
+| **Tamaño mínimo requerido** | Generalmente requiere un mínimo de **1,024 a 2,048 tokens** (dependiendo del modelo, como Sonnet u Opus) para que el bloque pueda ser cacheado. | Requiere un mínimo de **1,024 a 4,096 tokens** (según el modelo) para activar el ahorro de contexto. |
+| **Ideal para...** | Historiales de chat que crecen turno a turno, agentes con muchas herramientas (*tool definitions*) y *few-shot prompting* extenso. | Documentos estáticos masivos (PDFs, videos completos, repositorios enteros) sobre los cuales se harán decenas de consultas independientes. |
+
+---
+
+### Reglas clave para aprovecharlo con historiales largos
+
+* **Coincidencia exacta de prefijo (*Prefix Matching*):** La caché solo funciona si el inicio del prompt es **100 % idéntico** byte por byte. Si modificas una sola palabra o instrucción al principio del historial, se invalida la caché y el modelo tendrá que recalcular todo desde ese punto.
+* **Estrategia de puntos de control en chats:** En conversaciones largas, la mejor práctica es colocar el contenido estático al inicio (System Prompt + documentos de referencia) y mover el marcador de caché al final del historial acumulado cada cierto número de turnos, dejando únicamente la última pregunta del usuario fuera de la caché.

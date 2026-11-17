@@ -1,0 +1,20 @@
+https://teachablemachine.withgoogle.com/
+
+https://datastudio.google.com/navigation/reporting
+
+oreati.com
+
+PROMPT 1:
+
+Se requiere un dataset de Kaggle, que permita la realización del siguiente ejemplo:
+Aplicar aprendizaje no supervisado (segmentación) sobre una base de n clientes para identificar grupos naturales de comportamiento, y traducir cada segmento en un plan de acción de negocio. 
+
+1) Cargar el archivo.
+2) Decribir contenido.
+3) Realiza el análisis exploratorio de los datos y sus variables.
+4) Aplica un algoritmo de segmentación y dame una interpretación de los grupos obtenidos.
+5) A partir de los resultados obtenidos genera un informe en formato pdf
+6) Genera una presentación ejecutiva a partir de los resultados producidos.
+
+
+

@@ -1,0 +1,24 @@
+import os
+import pandas as pd
+
+# Check files in current directory or locate Walmart_Sales.csv
+file_path = "Walmart_Sales.csv"
+if not os.path.exists(file_path):
+    for root, dirs, files in os.walk("."):
+        if "Walmart_Sales.csv" in files:
+            file_path = os.path.join(root, "Walmart_Sales.csv")
+            break
+
+df = pd.read_csv(file_path)
+print("Shape:", df.shape)
+print("\nColumns:", df.columns.tolist())
+print("\nHead:\n", df.head())
+print("\nInfo/Types:\n", df.dtypes)
+print("\nMissing values:\n", df.isnull().sum())
+print("\nSummary stats:\n", df.describe())
+
+# Additional details on stores, date ranges
+df['Date_parsed'] = pd.to_datetime(df['Date'], format='%d-%m-%Y')
+print("Min Date:", df['Date_parsed'].min())
+print("Max Date:", df['Date_parsed'].max())
+print("Unique stores:", df['Store'].nunique())

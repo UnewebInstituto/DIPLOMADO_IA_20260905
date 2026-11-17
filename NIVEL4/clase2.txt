@@ -1,0 +1,5 @@
+**P2 — 100 reseñas de Google (sentimiento y reputación)**
+
+- Google Maps Restaurant Reviews: https://www.kaggle.com/datasets/denizbilginn/google-maps-restaurant-reviews — 1.100 reseñas reales de restaurantes en Google Maps, con texto y calificación; puedes tomar una muestra de 100.
+
+- Customer Sentiment Dataset: https://www.kaggle.com/datasets/kundanbedmutha/customer-sentiment-dataset — 25.000 reseñas de clientes en varias plataformas, con etiqueta de sentimiento ya asignada (útil para comparar contra la clasificación de Claude).

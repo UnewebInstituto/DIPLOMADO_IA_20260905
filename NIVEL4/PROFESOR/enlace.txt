@@ -1,0 +1,5 @@
+https://aistudio.google.com/docs/get-started
+
+$env:GEMINI_API_KEY="tu_clave_aqui"
+
+echo $env:GEMIN_API_KEY

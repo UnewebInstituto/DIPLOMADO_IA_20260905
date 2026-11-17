@@ -1,0 +1,17 @@
+Para esta práctica te recomiendo un dataset de ventas **ya sucio** y recortado a unas 150 filas. Estas son las opciones que encontré en Kaggle:
+
+1. **Dataset de ventas de una cafetería con datos sucios (mi primera opción).** Un proyecto publicado cuenta que partió de datos crudos de transacciones de una cafetería, descargados de Kaggle, que estaban desordenados y requirieron una limpieza considerable. Según recuerdo, se llama «Cafe Sales - Dirty Data for Cleaning Training». Verifica el nombre exacto al buscarlo, porque no pude confirmarlo en la búsqueda. Es ideal porque tiene pocas columnas (producto, cantidad, precio, método de pago, fecha) y los errores se entienden a simple vista.
+
+https://www.kaggle.com/search?q=Cafe+Sales+-+Dirty+Data+for+Cleaning+Training+in%3Adatasets
+
+2. **Retail Store Sales.** Una guía de tareas de limpieza lo lista pidiendo tratar ventas o datos de clientes faltantes y corregir inconsistencias en las categorías de producto. Esas son justo las fallas que quieres que el loop detecte.
+
+3. **Dirty E-Commerce Data (más de 80.000 productos).** Está descrito como un dataset «sucio» con valores faltantes, inconsistencias de formato y posibles errores. Es muy grande para un chat y sus datos son de catálogo, no de ventas. Solo te sirve si recortas una muestra.
+
+**Cómo prepararlo para el taller:**
+
+- **Recorta el archivo a unas 150 filas.** Los datasets de Kaggle suelen tener miles de filas y se atascan al subirlos a un chat.
+- **Revisa antes que tenga los tres tipos de error:** vacíos, duplicados y valores imposibles. Si falta alguno, añádelo a mano. Así sabes con certeza qué debe encontrar la IA en la auditoría.
+- **Guarda una lista con los errores sembrados.** Sirve para contrastar la Fase A y para el momento «¡ajá!» del grupo.
+
+Si prefieres evitar Kaggle, puedo generarte aquí un CSV de ventas de 150 filas con los errores exactos que quieras: una fecha imposible, dos duplicados, un precio negativo y categorías escritas de tres maneras. Así controlas el ejercicio por completo y no hay que descargar nada. ¿Quieres que lo genere?

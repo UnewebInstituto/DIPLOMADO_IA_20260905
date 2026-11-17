@@ -1,0 +1,101 @@
+﻿Predicción de Abandono,Motivo
+SI,"Alta probabilidad de cancelación por contrato mes a mes sin compromiso de permanencia, muy baja antigüedad (1 mes), pago mediante cheque electrónico (asociado a alta fricción e insatisfacción), ausencia de soporte técnico contratado y falta de servicios adicionales de seguridad."
+NO,"Cliente fidelizado con sólida antigüedad en el servicio (41 meses), método de pago automático domiciliado y tarifa mensual competitiva ($25.25/mes)."
+NO,"Cliente fidelizado con contrato a plazo fijo (two year), sólida antigüedad en el servicio (52 meses) y tarifa mensual competitiva ($19.35/mes)."
+SI,"Alta probabilidad de cancelación por contrato mes a mes sin compromiso de permanencia, muy baja antigüedad (1 mes), tarifa mensual elevada en fibra óptica ($76.35/mes), pago mediante cheque electrónico (asociado a alta fricción e insatisfacción), ausencia de soporte técnico contratado y falta de servicios adicionales de seguridad."
+NO,"Cliente fidelizado con contrato a plazo fijo (two year), sólida antigüedad en el servicio (67 meses), servicios complementarios activos de soporte y seguridad y método de pago automático domiciliado."
+NO,Baja probabilidad de abandono por sólida antigüedad en el servicio (68 meses) y método de pago automático domiciliado.
+NO,"Cliente fidelizado con contrato a plazo fijo (two year), trayectoria estable de 23 meses, servicios complementarios activos de soporte y seguridad y método de pago automático domiciliado."
+NO,"Cliente fidelizado con contrato a plazo fijo (two year), sólida antigüedad en el servicio (72 meses), servicios complementarios activos de soporte y seguridad y método de pago automático domiciliado."
+NO,"Cliente fidelizado con contrato a plazo fijo (two year), sólida antigüedad en el servicio (70 meses), servicios complementarios activos de soporte y seguridad y método de pago automático domiciliado."
+SI,Riesgo elevado debido a contrato mes a mes sin compromiso de permanencia y muy baja antigüedad (1 mes).
+NO,Perfil estable sustentado en tarifa mensual competitiva ($20.45/mes).
+NO,Perfil estable sustentado en trayectoria estable de 34 meses.
+NO,Baja probabilidad de abandono por contrato a plazo fijo (one year) y trayectoria estable de 28 meses.
+SI,"Alta probabilidad de cancelación por contrato mes a mes sin compromiso de permanencia, antigüedad baja (18 meses), tarifa mensual elevada en fibra óptica ($85.45/mes), pago mediante cheque electrónico (asociado a alta fricción e insatisfacción), falta de servicios adicionales de seguridad y perfil de adulto mayor con baja retención en tarifas altas."
+NO,"Cliente fidelizado con trayectoria estable de 15 meses, método de pago automático domiciliado y tarifa mensual competitiva ($20.45/mes)."
+SI,"Alta probabilidad de cancelación por contrato mes a mes sin compromiso de permanencia, antigüedad baja (11 meses), tarifa mensual elevada en fibra óptica ($95.15/mes), ausencia de soporte técnico contratado, falta de servicios adicionales de seguridad y perfil de adulto mayor con baja retención en tarifas altas."
+NO,Cliente con perfil de consumo estable y bajo riesgo de cancelación.
+SI,"Alta probabilidad de cancelación por contrato mes a mes sin compromiso de permanencia, muy baja antigüedad (1 mes), tarifa mensual elevada en fibra óptica ($70.00/mes), pago mediante cheque electrónico (asociado a alta fricción e insatisfacción), ausencia de soporte técnico contratado y falta de servicios adicionales de seguridad."
+NO,Perfil estable sustentado en sólida antigüedad en el servicio (37 meses).
+NO,Perfil estable sustentado en trayectoria estable de 22 meses.
+SI,"Alta probabilidad de cancelación por contrato mes a mes sin compromiso de permanencia, muy baja antigüedad (1 mes), tarifa mensual elevada en fibra óptica ($70.25/mes), pago mediante cheque electrónico (asociado a alta fricción e insatisfacción), ausencia de soporte técnico contratado y falta de servicios adicionales de seguridad."
+NO,Perfil estable sustentado en tarifa mensual competitiva ($19.45/mes).
+NO,Baja probabilidad de abandono por sólida antigüedad en el servicio (46 meses) y método de pago automático domiciliado.
+NO,"Cliente fidelizado con contrato a plazo fijo (one year), sólida antigüedad en el servicio (51 meses), servicios complementarios activos de soporte y seguridad y método de pago automático domiciliado."
+NO,"Cliente fidelizado con contrato a plazo fijo (one year), sólida antigüedad en el servicio (41 meses), servicios complementarios activos de soporte y seguridad y método de pago automático domiciliado."
+NO,Baja probabilidad de abandono por servicios complementarios activos de soporte y seguridad y método de pago automático domiciliado.
+NO,Baja probabilidad de abandono por sólida antigüedad en el servicio (45 meses) y método de pago automático domiciliado.
+NO,Baja probabilidad de abandono por trayectoria estable de 29 meses y servicios complementarios activos de soporte y seguridad.
+SI,"Alta probabilidad de cancelación por contrato mes a mes sin compromiso de permanencia, antigüedad baja (15 meses), tarifa mensual elevada en fibra óptica ($91.50/mes), pago mediante cheque electrónico (asociado a alta fricción e insatisfacción), ausencia de soporte técnico contratado, falta de servicios adicionales de seguridad y perfil de adulto mayor con baja retención en tarifas altas."
+NO,"Cliente fidelizado con contrato a plazo fijo (two year), sólida antigüedad en el servicio (72 meses), servicios complementarios activos de soporte y seguridad y método de pago automático domiciliado."
+NO,"Cliente fidelizado con contrato a plazo fijo (one year), sólida antigüedad en el servicio (50 meses) y servicios complementarios activos de soporte y seguridad."
+NO,"Cliente fidelizado con contrato a plazo fijo (two year), trayectoria estable de 27 meses y tarifa mensual competitiva ($20.60/mes)."
+NO,"Cliente fidelizado con contrato a plazo fijo (two year), sólida antigüedad en el servicio (72 meses), servicios complementarios activos de soporte y seguridad y método de pago automático domiciliado."
+NO,"Cliente fidelizado con contrato a plazo fijo (one year), sólida antigüedad en el servicio (51 meses), servicios complementarios activos de soporte y seguridad y método de pago automático domiciliado."
+NO,"Cliente fidelizado con sólida antigüedad en el servicio (60 meses), servicios complementarios activos de soporte y seguridad y método de pago automático domiciliado."
+NO,"Cliente fidelizado con contrato a plazo fijo (two year), trayectoria estable de 17 meses, método de pago automático domiciliado y tarifa mensual competitiva ($19.45/mes)."
+NO,"Cliente fidelizado con contrato a plazo fijo (two year), sólida antigüedad en el servicio (72 meses), método de pago automático domiciliado y tarifa mensual competitiva ($21.15/mes)."
+SI,"Alta probabilidad de cancelación por contrato mes a mes sin compromiso de permanencia, tarifa mensual elevada en fibra óptica ($104.40/mes), pago mediante cheque electrónico (asociado a alta fricción e insatisfacción), ausencia de soporte técnico contratado y falta de servicios adicionales de seguridad."
+NO,Baja probabilidad de abandono por contrato a plazo fijo (one year) y sólida antigüedad en el servicio (66 meses).
+SI,"Alta probabilidad de cancelación por contrato mes a mes sin compromiso de permanencia, tarifa mensual elevada en fibra óptica ($103.95/mes), pago mediante cheque electrónico (asociado a alta fricción e insatisfacción), ausencia de soporte técnico contratado y falta de servicios adicionales de seguridad."
+SI,"Alta probabilidad de cancelación por contrato mes a mes sin compromiso de permanencia, muy baja antigüedad (5 meses), pago mediante cheque electrónico (asociado a alta fricción e insatisfacción), ausencia de soporte técnico contratado y falta de servicios adicionales de seguridad."
+NO,"Cliente fidelizado con contrato a plazo fijo (one year), sólida antigüedad en el servicio (57 meses) y método de pago automático domiciliado."
+SI,"Alta probabilidad de cancelación por contrato mes a mes sin compromiso de permanencia, antigüedad baja (8 meses), tarifa mensual elevada en fibra óptica ($75.75/mes), pago mediante cheque electrónico (asociado a alta fricción e insatisfacción), ausencia de soporte técnico contratado, falta de servicios adicionales de seguridad y perfil de adulto mayor con baja retención en tarifas altas."
+NO,"Cliente fidelizado con contrato a plazo fijo (one year), trayectoria estable de 14 meses y método de pago automático domiciliado."
+SI,"Alta probabilidad de cancelación por contrato mes a mes sin compromiso de permanencia, tarifa mensual elevada en fibra óptica ($94.70/mes), ausencia de soporte técnico contratado y falta de servicios adicionales de seguridad."
+NO,"Cliente fidelizado con contrato a plazo fijo (one year), sólida antigüedad en el servicio (52 meses), método de pago automático domiciliado y tarifa mensual competitiva ($19.60/mes)."
+NO,Baja probabilidad de abandono por servicios complementarios activos de soporte y seguridad y método de pago automático domiciliado.
+SI,"Alta probabilidad de cancelación por contrato mes a mes sin compromiso de permanencia, antigüedad baja (13 meses), tarifa mensual elevada en fibra óptica ($79.80/mes), pago mediante cheque electrónico (asociado a alta fricción e insatisfacción), ausencia de soporte técnico contratado y falta de servicios adicionales de seguridad."
+SI,"Alta probabilidad de cancelación por contrato mes a mes sin compromiso de permanencia, antigüedad baja (15 meses), tarifa mensual elevada en fibra óptica ($89.85/mes), pago mediante cheque electrónico (asociado a alta fricción e insatisfacción), ausencia de soporte técnico contratado, falta de servicios adicionales de seguridad y perfil de adulto mayor con baja retención en tarifas altas."
+NO,"Cliente fidelizado con contrato a plazo fijo (one year), trayectoria estable de 22 meses, servicios complementarios activos de soporte y seguridad y método de pago automático domiciliado."
+NO,Baja probabilidad de abandono por trayectoria estable de 19 meses y tarifa mensual competitiva ($19.90/mes).
+NO,"Cliente fidelizado con trayectoria estable de 23 meses, servicios complementarios activos de soporte y seguridad, método de pago automático domiciliado y tarifa mensual competitiva ($30.35/mes)."
+NO,"Cliente fidelizado con contrato a plazo fijo (two year), sólida antigüedad en el servicio (72 meses), servicios complementarios activos de soporte y seguridad y método de pago automático domiciliado."
+NO,"Cliente fidelizado con contrato a plazo fijo (two year), sólida antigüedad en el servicio (72 meses) y método de pago automático domiciliado."
+NO,"Cliente fidelizado con sólida antigüedad en el servicio (59 meses), servicios complementarios activos de soporte y seguridad y método de pago automático domiciliado."
+NO,"Cliente fidelizado con contrato a plazo fijo (two year), sólida antigüedad en el servicio (70 meses), servicios complementarios activos de soporte y seguridad y método de pago automático domiciliado."
+NO,"Cliente fidelizado con contrato a plazo fijo (two year), sólida antigüedad en el servicio (70 meses), servicios complementarios activos de soporte y seguridad y método de pago automático domiciliado."
+SI,"Alta probabilidad de cancelación por contrato mes a mes sin compromiso de permanencia, antigüedad baja (9 meses), tarifa mensual elevada en fibra óptica ($103.10/mes), pago mediante cheque electrónico (asociado a alta fricción e insatisfacción) y falta de servicios adicionales de seguridad."
+NO,Perfil estable sustentado en tarifa mensual competitiva ($24.60/mes).
+SI,"Alta probabilidad de cancelación por contrato mes a mes sin compromiso de permanencia, antigüedad baja (17 meses), tarifa mensual elevada en fibra óptica ($101.80/mes), pago mediante cheque electrónico (asociado a alta fricción e insatisfacción), ausencia de soporte técnico contratado, falta de servicios adicionales de seguridad y perfil de adulto mayor con baja retención en tarifas altas."
+NO,"Cliente fidelizado con contrato a plazo fijo (one year), trayectoria estable de 28 meses y método de pago automático domiciliado."
+NO,Perfil estable sustentado en servicios complementarios activos de soporte y seguridad.
+NO,Baja probabilidad de abandono por método de pago automático domiciliado y tarifa mensual competitiva ($20.95/mes).
+NO,"Cliente fidelizado con contrato a plazo fijo (two year), sólida antigüedad en el servicio (72 meses), servicios complementarios activos de soporte y seguridad y método de pago automático domiciliado."
+NO,Cliente con perfil de consumo estable y bajo riesgo de cancelación.
+NO,"Cliente fidelizado con contrato a plazo fijo (two year), sólida antigüedad en el servicio (69 meses), método de pago automático domiciliado y tarifa mensual competitiva ($20.30/mes)."
+NO,"Cliente fidelizado con contrato a plazo fijo (two year), sólida antigüedad en el servicio (39 meses), método de pago automático domiciliado y tarifa mensual competitiva ($19.85/mes)."
+NO,"Cliente fidelizado con contrato a plazo fijo (two year), sólida antigüedad en el servicio (67 meses), servicios complementarios activos de soporte y seguridad y método de pago automático domiciliado."
+NO,"Cliente fidelizado con contrato a plazo fijo (one year), sólida antigüedad en el servicio (39 meses) y tarifa mensual competitiva ($19.90/mes)."
+NO,"Cliente fidelizado con contrato a plazo fijo (two year), sólida antigüedad en el servicio (54 meses), servicios complementarios activos de soporte y seguridad y método de pago automático domiciliado."
+SI,"Alta probabilidad de cancelación por contrato mes a mes sin compromiso de permanencia, muy baja antigüedad (1 mes), tarifa mensual elevada en fibra óptica ($74.50/mes), pago mediante cheque electrónico (asociado a alta fricción e insatisfacción), ausencia de soporte técnico contratado y falta de servicios adicionales de seguridad."
+NO,"Cliente fidelizado con contrato a plazo fijo (two year), sólida antigüedad en el servicio (72 meses) y servicios complementarios activos de soporte y seguridad."
+SI,"Alta probabilidad de cancelación por contrato mes a mes sin compromiso de permanencia, antigüedad baja (10 meses), tarifa mensual elevada en fibra óptica ($98.55/mes), pago mediante cheque electrónico (asociado a alta fricción e insatisfacción) y ausencia de soporte técnico contratado."
+SI,"Alta probabilidad de cancelación por contrato mes a mes sin compromiso de permanencia, antigüedad baja (13 meses), tarifa mensual elevada en fibra óptica ($96.65/mes), ausencia de soporte técnico contratado y falta de servicios adicionales de seguridad."
+NO,"Cliente fidelizado con contrato a plazo fijo (one year), trayectoria estable de 35 meses y servicios complementarios activos de soporte y seguridad."
+NO,"Cliente fidelizado con trayectoria estable de 12 meses, servicios complementarios activos de soporte y seguridad y tarifa mensual competitiva ($35.50/mes)."
+NO,"Cliente fidelizado con trayectoria estable de 31 meses, servicios complementarios activos de soporte y seguridad y método de pago automático domiciliado."
+NO,"Cliente fidelizado con sólida antigüedad en el servicio (53 meses), servicios complementarios activos de soporte y seguridad y método de pago automático domiciliado."
+NO,Perfil estable sustentado en tarifa mensual competitiva ($19.50/mes).
+NO,"Cliente fidelizado con contrato a plazo fijo (one year), trayectoria estable de 30 meses y tarifa mensual competitiva ($19.70/mes)."
+NO,Baja probabilidad de abandono por sólida antigüedad en el servicio (46 meses) y método de pago automático domiciliado.
+NO,Perfil estable sustentado en trayectoria estable de 19 meses.
+NO,Baja probabilidad de abandono por trayectoria estable de 23 meses y servicios complementarios activos de soporte y seguridad.
+NO,"Cliente fidelizado con trayectoria estable de 15 meses, servicios complementarios activos de soporte y seguridad y método de pago automático domiciliado."
+NO,"Cliente fidelizado con contrato a plazo fijo (two year), sólida antigüedad en el servicio (48 meses), método de pago automático domiciliado y tarifa mensual competitiva ($20.15/mes)."
+SI,"Alta probabilidad de cancelación por contrato mes a mes sin compromiso de permanencia, tarifa mensual elevada en fibra óptica ($95.90/mes), pago mediante cheque electrónico (asociado a alta fricción e insatisfacción), ausencia de soporte técnico contratado y falta de servicios adicionales de seguridad."
+NO,"Cliente fidelizado con contrato a plazo fijo (one year), sólida antigüedad en el servicio (52 meses), servicios complementarios activos de soporte y seguridad y método de pago automático domiciliado."
+NO,"Cliente fidelizado con trayectoria estable de 12 meses, servicios complementarios activos de soporte y seguridad y método de pago automático domiciliado."
+NO,"Cliente fidelizado con contrato a plazo fijo (one year), sólida antigüedad en el servicio (48 meses), método de pago automático domiciliado y tarifa mensual competitiva ($24.55/mes)."
+NO,"Cliente fidelizado con contrato a plazo fijo (two year), sólida antigüedad en el servicio (38 meses) y tarifa mensual competitiva ($20.05/mes)."
+NO,"Cliente fidelizado con trayectoria estable de 18 meses, servicios complementarios activos de soporte y seguridad y tarifa mensual competitiva ($35.20/mes)."
+NO,Baja probabilidad de abandono por sólida antigüedad en el servicio (45 meses) y método de pago automático domiciliado.
+SI,"Alta probabilidad de cancelación por contrato mes a mes sin compromiso de permanencia, antigüedad baja (12 meses), tarifa mensual elevada en fibra óptica ($89.55/mes), pago mediante cheque electrónico (asociado a alta fricción e insatisfacción), ausencia de soporte técnico contratado y falta de servicios adicionales de seguridad."
+NO,"Cliente fidelizado con contrato a plazo fijo (two year), sólida antigüedad en el servicio (66 meses), servicios complementarios activos de soporte y seguridad y método de pago automático domiciliado."
+NO,"Cliente fidelizado con contrato a plazo fijo (two year), sólida antigüedad en el servicio (72 meses), método de pago automático domiciliado y tarifa mensual competitiva ($20.25/mes)."
+NO,"Cliente fidelizado con contrato a plazo fijo (two year), sólida antigüedad en el servicio (70 meses), servicios complementarios activos de soporte y seguridad, método de pago automático domiciliado y tarifa mensual competitiva ($44.60/mes)."
+NO,Baja probabilidad de abandono por trayectoria estable de 27 meses y método de pago automático domiciliado.
+NO,Perfil estable sustentado en tarifa mensual competitiva ($20.00/mes).
+SI,"Alta probabilidad de cancelación por contrato mes a mes sin compromiso de permanencia, antigüedad baja (13 meses), tarifa mensual elevada en fibra óptica ($95.25/mes), pago mediante cheque electrónico (asociado a alta fricción e insatisfacción), ausencia de soporte técnico contratado, falta de servicios adicionales de seguridad y perfil de adulto mayor con baja retención en tarifas altas."
+NO,"Cliente fidelizado con contrato a plazo fijo (two year), sólida antigüedad en el servicio (65 meses) y servicios complementarios activos de soporte y seguridad."

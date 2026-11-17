@@ -1,0 +1,119 @@
+Como experto en sistemas de **Agentic Loops** (bucles agénticos sin código), entiendo perfectamente tu objetivo: dejar atrás las respuestas en línea recta de la "máquina tragamonedas" y configurar a la IA como un **Chef Profesional** que revisa, evalúa con rúbricas estrictas y corrige su propio trabajo antes de entregártelo.
+
+A continuación, te presento los ejemplos de enunciados (Prompts Maestros) para las **5 prácticas clave**, integrando la estructura universal del bucle (Planificar, Ejecutar, Evaluar, Autocorregir y Entregar). Para la **Práctica 3**, aplicaremos el caso exacto sobre el dataset de Kaggle **"Cafe Sales - Dirty Data for Cleaning Training"**.
+
+---
+
+### Práctica 1: Curación Automática para Redes Sociales
+
+*Objetivo:* Generar copys para redes sociales libres de clichés, con un gancho potente y llamadas a la acción claras.
+
+```text
+ROL: Actúa como un experto en marketing de contenidos y copywriting digital.
+OBJETIVO: Redactar un post para LinkedIn sobre la importancia de automatizar procesos repetitivos en los negocios, dirigido a emprendedores.
+
+PROCESO:
+1. PLANIFICAR: Enumera en 3 pasos breves cómo estructurarás el contenido para captar la atención en los primeros segundos.
+2. EJECUTAR: Escribe el Borrador 1 del post siguiendo tu plan.
+3. EVALUAR: Califica el borrador de 1 a 10 utilizando estrictamente esta rúbrica:
+   - Gancho: ¿El gancho cabe en menos de 10 palabras y genera curiosidad sin revelar la respuesta? (Puntuación 1-10)
+   - Idea Central: ¿Tiene una sola idea central clara? (Puntuación 1-10)
+   - CTA: ¿Incluye una llamada a la acción (CTA) con un verbo imperativo directo? (Puntuación 1-10)
+   - Prohibido Clichés: ¿Está libre de frases prefabricadas como "en un mundo cambiante" o "lleva tu negocio al siguiente nivel"? (Si contiene alguna, la nota es 0; si está limpio, 10).
+   Cita la frase exacta de tu texto que justifica cada nota. Sé sumamente estricto.
+4. AUTOCORREGIR: Si algún criterio obtiene menos de 8, reescribe solo la sección que falló. Repite este ciclo de mejora hasta que todos los criterios alcancen 8 o más, con un máximo de 3 vueltas.
+5. ENTREGA: Muestra la versión final limpia y una tabla con la evolución de las notas en cada vuelta.
+
+```
+
+---
+
+### Práctica 2: Correos Autocorrectivos (Negocios / Cobros)
+
+*Objetivo:* Redactar comunicaciones profesionales (como cobros o rechazos) eliminando tonos pasivo-agresivos o exceso de palabras antes de que los lea el usuario.
+
+```text
+ROL: Actúa como un director de operaciones y relaciones corporativas experto en comunicación asertiva.
+OBJETIVO: Redactar un correo de cobro formal a un cliente con una factura vencida hace 15 días, manteniendo una postura firme pero cordial.
+
+PROCESO:
+1. PLANIFICAR: Enumera en 3 pasos la estrategia de redacción (tono, claridad de la petición y fecha límite).
+2. EJECUTAR: Redacta el Borrador 1 del correo electrónico.
+3. EVALUAR: Califica de 1 a 10 con la siguiente rúbrica:
+   - Tono: ¿Es estrictamente cordial, profesional, sin pasivo-agresividad ni exceso de formalismos vacíos?
+   - Claridad y Longitud: ¿La petición de pago está expresada en la primera frase y el correo tiene un máximo de 120 palabras?
+   - Cierre: ¿Termina especificando una fecha exacta para el pago?
+   Cita la frase exacta del borrador que justifica cada nota.
+4. AUTOCORREGIR: Si algún criterio tiene menos de 8, reescribe el texto corrigiendo el fallo. Máximo 3 vueltas.
+5. ENTREGA: Presenta la versión final del correo y la tabla con el historial de autoevaluación.
+
+```
+
+---
+
+### Práctica 3: Analítica de Datos con Doble Verificación (Dataset Kaggle: *Cafe Sales - Dirty Data for Cleaning Training*)
+
+*Objetivo:* Realizar una auditoría de datos sucios y un análisis analítico con trazabilidad estricta de filas y columnas, previniendo alucinaciones numéricas.
+
+```text
+ROL: Actúa como un analista de datos senior e ingeniero de calidad de datos (Data QA).
+OBJETIVO: Analizar el comportamiento y la limpieza de los datos del dataset de Kaggle "Cafe Sales - Dirty Data for Cleaning Training" (asumiendo que inspeccionas un archivo CSV con ventas de café que contienen valores nulos, duplicados, precios negativos o fechas erróneas).
+
+PROCESO:
+1. PLANIFICAR: Enumera en 3 pasos cómo realizarás la auditoría de inconsistencias antes de calcular métricas de negocio.
+2. EJECUTAR: Genera el primer informe de auditoría y las 3 conclusiones clave de ventas (ej. producto más vendido, ingresos totales limpios, anomalías detectadas).
+3. EVALUAR: Califica el resultado de 1 a 10 usando esta rúbrica:
+   - Auditoría de Errores (El Escudo): ¿Identificó explícitamente vacíos, duplicados o valores imposibles (precios/cantidades negativas)? (Puntuación 1-10)
+   - Trazabilidad y Exactitud (El Motor): ¿Cada cifra o conclusión analítica está vinculada explícitamente a una categoría, fila o columna específica de los datos? (Puntuación 1-10)
+   - Claridad Ejecutiva: ¿Las conclusiones son entendibles en menos de 30 segundos para un gerente? (Puntuación 1-10)
+   Cita la celda, fila o fragmento exacto del análisis que justifica cada nota.
+4. AUTOCORREGIR: Si cualquier nota es menor a 8, corrige los cálculos o la auditoría faltante. Máximo 3 vueltas.
+5. ENTREGA: Muestra el informe analítico final verificado y la tabla de evolución de notas.
+
+```
+
+---
+
+### Práctica 4: Propuesta Técnica / Documentación de Proyectos
+
+*Objetivo:* Estructurar requerimientos y especificaciones técnicas de software o procesos sin caer en ambigüedades.
+
+```text
+ROL: Actúa como un Arquitecto de Software y consultor tecnológico especializado en metodologías ágiles.
+OBJETIVO: Redactar los requerimientos funcionales para un módulo de autenticación de usuarios en una aplicación web.
+
+PROCESO:
+1. PLANIFICAR: Detalla en 3 pasos el desglose técnico del alcance del módulo.
+2. EJECUTAR: Redacta el primer borrador de la especificación técnica.
+3. EVALUAR: Califica de 1 a 10 utilizando la rúbrica:
+   - Estructura: ¿Se divide claramente en historias de usuario o criterios de aceptación medibles?
+   - Viabilidad Técnica: ¿Los stack tecnológicos propuestos son coherentes y sin contradicciones?
+   - Cita la frase exacta que justifica cada puntuación. Sé estricto.
+4. AUTOCORREGIR: Si algún criterio es menor a 8, ajusta los requerimientos técnicos. Máximo 3 vueltas.
+5. ENTREGA: Documento técnico final y tabla de evolución de calificaciones.
+
+```
+
+---
+
+### Práctica 5: Nivel Avanzado - Sistema de Dos Cerebros (Creador vs. Crítico)
+
+*Objetivo:* Evitar la complacencia de la autoevaluación utilizando dos chats o roles separados (El Creador que redacta y El Crítico implacable que audita desde afuera).
+
+```text
+[CONFIGURACIÓN DEL AGENTE 1: EL CREADOR]
+ROL: Actúa como un redactor técnico experto.
+OBJETIVO: Redactar un artículo breve sobre las ventajas de los entornos locales frente a la nube pública en la banca.
+INSTRUCCIÓN: Genera un primer borrador completo siguiendo una estructura lógica de 3 puntos.
+
+---
+[CONFIGURACIÓN DEL AGENTE 2: EL CRÍTICO IMPLACABLE (Segundo Chat / Prompt de Auditoría)]
+ROL: Actúa como un editor tecnológico implacable, escéptico y sin piedad.
+OBJETIVO: Auditar el texto generado por El Creador.
+PROCESO:
+1. REVISAR: Analiza el texto recibido en busca de vacíos argumentales, generalidades o falta de rigor técnico.
+2. EVALUAR: Encuentra estrictamente 3 debilidades críticas en el texto.
+3. EXIGIR: Cita la frase exacta del texto de El Creador que demuestra cada debilidad. **No hagas ningún elogio.**
+4. DEVOLVER: Pasa esta crítica directa al Creador para que este reescriba únicamente las partes señaladas hasta alcanzar un estándar profesional de nivel 10/10.
+
+```

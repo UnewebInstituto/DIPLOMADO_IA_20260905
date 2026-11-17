@@ -1,0 +1,101 @@
+﻿Predicción de Abandono,Motivo
+SI,Riesgo de fuga materializado debido a: Contrato mes a mes sin cláusula de permanencia; muy baja antigüedad en el servicio (1 mes); ausencia de soporte técnico y seguridad en línea; pago manual mediante cheque electrónico.
+NO,Cliente retenido sin indicadores de abandono: alta fidelidad del cliente (41 meses acumulados); tarifa mensual competitiva.
+NO,Cliente retenido sin indicadores de abandono: contrato establecido (Two year); alta fidelidad del cliente (52 meses acumulados); tarifa mensual competitiva.
+SI,Riesgo de fuga materializado debido a: Contrato mes a mes sin cláusula de permanencia; muy baja antigüedad en el servicio (1 mes); tarifa mensual elevada ($76.35/mes); ausencia de soporte técnico y seguridad en línea; pago manual mediante cheque electrónico.
+NO,Cliente retenido sin indicadores de abandono: contrato establecido (Two year); alta fidelidad del cliente (67 meses acumulados); adopción de servicios complementarios (soporte/seguridad/backup).
+SI,Riesgo de fuga materializado debido a: Contrato mes a mes sin cláusula de permanencia; antigüedad prolongada (68 meses); tarifa mensual elevada ($89.60/mes); ausencia de soporte técnico y seguridad en línea.
+NO,Cliente retenido sin indicadores de abandono: contrato establecido (Two year); adopción de servicios complementarios (soporte/seguridad/backup).
+NO,Cliente retenido sin indicadores de abandono: contrato establecido (Two year); alta fidelidad del cliente (72 meses acumulados); adopción de servicios complementarios (soporte/seguridad/backup).
+SI,Riesgo de fuga materializado debido a: Cancelación de contrato multianual; antigüedad prolongada (70 meses); tarifa mensual elevada ($104.00/mes).
+SI,Riesgo de fuga materializado debido a: Contrato mes a mes sin cláusula de permanencia; muy baja antigüedad en el servicio (1 mes).
+NO,Cliente retenido sin indicadores de abandono: tarifa mensual competitiva.
+NO,Cliente retenido sin indicadores de abandono: alta fidelidad del cliente (34 meses acumulados).
+NO,Cliente retenido sin indicadores de abandono: contrato establecido (One year); alta fidelidad del cliente (28 meses acumulados).
+SI,Riesgo de fuga materializado debido a: Contrato mes a mes sin cláusula de permanencia; antigüedad intermedia (18 meses); tarifa mensual elevada ($85.45/mes); sin herramientas de protección cibernética; pago manual mediante cheque electrónico.
+NO,Cliente retenido sin indicadores de abandono: tarifa mensual competitiva.
+SI,Riesgo de fuga materializado debido a: Contrato mes a mes sin cláusula de permanencia; baja antigüedad (11 meses); tarifa mensual elevada ($95.15/mes); ausencia de soporte técnico y seguridad en línea.
+SI,Riesgo de fuga materializado debido a: Contrato mes a mes sin cláusula de permanencia; baja antigüedad (11 meses); ausencia de soporte técnico y seguridad en línea; pago manual mediante cheque electrónico.
+SI,Riesgo de fuga materializado debido a: Contrato mes a mes sin cláusula de permanencia; muy baja antigüedad en el servicio (1 mes); tarifa mensual elevada ($70.00/mes); ausencia de soporte técnico y seguridad en línea; pago manual mediante cheque electrónico.
+NO,Cliente retenido sin indicadores de abandono: alta fidelidad del cliente (37 meses acumulados); adopción de servicios complementarios (soporte/seguridad/backup).
+SI,Riesgo de fuga materializado debido a: Contrato mes a mes sin cláusula de permanencia; antigüedad intermedia (22 meses); tarifa mensual elevada ($89.40/mes); ausencia de soporte técnico y seguridad en línea; pago manual mediante cheque electrónico.
+NO,Cliente retenido sin indicadores de abandono: estabilidad contractual y satisfacción del cliente.
+NO,Cliente retenido sin indicadores de abandono: tarifa mensual competitiva.
+NO,Cliente retenido sin indicadores de abandono: alta fidelidad del cliente (46 meses acumulados); adopción de servicios complementarios (soporte/seguridad/backup).
+NO,Cliente retenido sin indicadores de abandono: contrato establecido (One year); alta fidelidad del cliente (51 meses acumulados); adopción de servicios complementarios (soporte/seguridad/backup).
+NO,Cliente retenido sin indicadores de abandono: contrato establecido (One year); alta fidelidad del cliente (41 meses acumulados); adopción de servicios complementarios (soporte/seguridad/backup).
+SI,Riesgo de fuga materializado debido a: Contrato mes a mes sin cláusula de permanencia; baja antigüedad (5 meses); sin herramientas de protección cibernética.
+SI,Riesgo de fuga materializado debido a: Contrato mes a mes sin cláusula de permanencia; antigüedad prolongada (45 meses); tarifa mensual elevada ($89.30/mes); ausencia de soporte técnico y seguridad en línea.
+NO,Cliente retenido sin indicadores de abandono: alta fidelidad del cliente (29 meses acumulados); adopción de servicios complementarios (soporte/seguridad/backup).
+NO,Cliente retenido sin indicadores de abandono: estabilidad contractual y satisfacción del cliente.
+NO,Cliente retenido sin indicadores de abandono: contrato establecido (Two year); alta fidelidad del cliente (72 meses acumulados); adopción de servicios complementarios (soporte/seguridad/backup).
+NO,Cliente retenido sin indicadores de abandono: contrato establecido (One year); alta fidelidad del cliente (50 meses acumulados); adopción de servicios complementarios (soporte/seguridad/backup).
+NO,Cliente retenido sin indicadores de abandono: contrato establecido (Two year); alta fidelidad del cliente (27 meses acumulados); tarifa mensual competitiva.
+NO,Cliente retenido sin indicadores de abandono: contrato establecido (Two year); alta fidelidad del cliente (72 meses acumulados); adopción de servicios complementarios (soporte/seguridad/backup).
+NO,Cliente retenido sin indicadores de abandono: contrato establecido (One year); alta fidelidad del cliente (51 meses acumulados); adopción de servicios complementarios (soporte/seguridad/backup).
+NO,Cliente retenido sin indicadores de abandono: alta fidelidad del cliente (60 meses acumulados); adopción de servicios complementarios (soporte/seguridad/backup).
+NO,Cliente retenido sin indicadores de abandono: contrato establecido (Two year); tarifa mensual competitiva.
+NO,Cliente retenido sin indicadores de abandono: contrato establecido (Two year); alta fidelidad del cliente (72 meses acumulados); tarifa mensual competitiva.
+SI,Riesgo de fuga materializado debido a: Contrato mes a mes sin cláusula de permanencia; antigüedad intermedia (33 meses); tarifa mensual elevada ($104.40/mes); ausencia de soporte técnico y seguridad en línea; pago manual mediante cheque electrónico.
+NO,Cliente retenido sin indicadores de abandono: contrato establecido (One year); alta fidelidad del cliente (66 meses acumulados); adopción de servicios complementarios (soporte/seguridad/backup).
+SI,Riesgo de fuga materializado debido a: Contrato mes a mes sin cláusula de permanencia; antigüedad prolongada (69 meses); tarifa mensual elevada ($103.95/mes); ausencia de soporte técnico y seguridad en línea; pago manual mediante cheque electrónico.
+SI,Riesgo de fuga materializado debido a: Contrato mes a mes sin cláusula de permanencia; baja antigüedad (5 meses); ausencia de soporte técnico y seguridad en línea; pago manual mediante cheque electrónico.
+NO,Cliente retenido sin indicadores de abandono: contrato establecido (One year); alta fidelidad del cliente (57 meses acumulados).
+SI,Riesgo de fuga materializado debido a: Contrato mes a mes sin cláusula de permanencia; baja antigüedad (8 meses); tarifa mensual elevada ($75.75/mes); ausencia de soporte técnico y seguridad en línea; pago manual mediante cheque electrónico.
+NO,Cliente retenido sin indicadores de abandono: contrato establecido (One year); adopción de servicios complementarios (soporte/seguridad/backup).
+SI,Riesgo de fuga materializado debido a: Contrato mes a mes sin cláusula de permanencia; antigüedad intermedia (25 meses); tarifa mensual elevada ($94.70/mes); ausencia de soporte técnico y seguridad en línea.
+NO,Cliente retenido sin indicadores de abandono: contrato establecido (One year); alta fidelidad del cliente (52 meses acumulados); tarifa mensual competitiva.
+SI,Riesgo de fuga materializado debido a: Contrato mes a mes sin cláusula de permanencia; baja antigüedad (7 meses); tarifa mensual elevada ($76.45/mes); falta de asistencia técnica personalizada.
+SI,Riesgo de fuga materializado debido a: Contrato mes a mes sin cláusula de permanencia; antigüedad intermedia (13 meses); tarifa mensual elevada ($79.80/mes); ausencia de soporte técnico y seguridad en línea; pago manual mediante cheque electrónico.
+SI,Riesgo de fuga materializado debido a: Contrato mes a mes sin cláusula de permanencia; antigüedad intermedia (15 meses); tarifa mensual elevada ($89.85/mes); ausencia de soporte técnico y seguridad en línea; pago manual mediante cheque electrónico.
+SI,Riesgo de fuga materializado debido a: Vencimiento o rescisión de contrato anual; antigüedad intermedia (22 meses); sin herramientas de protección cibernética.
+NO,Cliente retenido sin indicadores de abandono: tarifa mensual competitiva.
+NO,Cliente retenido sin indicadores de abandono: adopción de servicios complementarios (soporte/seguridad/backup); tarifa mensual competitiva.
+NO,Cliente retenido sin indicadores de abandono: contrato establecido (Two year); alta fidelidad del cliente (72 meses acumulados); adopción de servicios complementarios (soporte/seguridad/backup).
+NO,Cliente retenido sin indicadores de abandono: contrato establecido (Two year); alta fidelidad del cliente (72 meses acumulados); adopción de servicios complementarios (soporte/seguridad/backup).
+NO,Cliente retenido sin indicadores de abandono: alta fidelidad del cliente (59 meses acumulados); adopción de servicios complementarios (soporte/seguridad/backup).
+NO,Cliente retenido sin indicadores de abandono: contrato establecido (Two year); alta fidelidad del cliente (70 meses acumulados); adopción de servicios complementarios (soporte/seguridad/backup).
+NO,Cliente retenido sin indicadores de abandono: contrato establecido (Two year); alta fidelidad del cliente (70 meses acumulados); adopción de servicios complementarios (soporte/seguridad/backup).
+NO,Cliente retenido sin indicadores de abandono: adopción de servicios complementarios (soporte/seguridad/backup).
+NO,Cliente retenido sin indicadores de abandono: tarifa mensual competitiva.
+NO,Cliente retenido sin indicadores de abandono: adopción de servicios complementarios (soporte/seguridad/backup).
+NO,Cliente retenido sin indicadores de abandono: contrato establecido (One year); alta fidelidad del cliente (28 meses acumulados).
+NO,Cliente retenido sin indicadores de abandono: adopción de servicios complementarios (soporte/seguridad/backup).
+NO,Cliente retenido sin indicadores de abandono: tarifa mensual competitiva.
+NO,Cliente retenido sin indicadores de abandono: contrato establecido (Two year); alta fidelidad del cliente (72 meses acumulados); adopción de servicios complementarios (soporte/seguridad/backup).
+SI,Riesgo de fuga materializado debido a: Contrato mes a mes sin cláusula de permanencia; baja antigüedad (8 meses); tarifa mensual elevada ($70.10/mes); ausencia de soporte técnico y seguridad en línea.
+NO,Cliente retenido sin indicadores de abandono: contrato establecido (Two year); alta fidelidad del cliente (69 meses acumulados); tarifa mensual competitiva.
+NO,Cliente retenido sin indicadores de abandono: contrato establecido (Two year); alta fidelidad del cliente (39 meses acumulados); tarifa mensual competitiva.
+NO,Cliente retenido sin indicadores de abandono: contrato establecido (Two year); alta fidelidad del cliente (67 meses acumulados); adopción de servicios complementarios (soporte/seguridad/backup).
+NO,Cliente retenido sin indicadores de abandono: contrato establecido (One year); alta fidelidad del cliente (39 meses acumulados); tarifa mensual competitiva.
+NO,Cliente retenido sin indicadores de abandono: contrato establecido (Two year); alta fidelidad del cliente (54 meses acumulados); adopción de servicios complementarios (soporte/seguridad/backup).
+SI,Riesgo de fuga materializado debido a: Contrato mes a mes sin cláusula de permanencia; muy baja antigüedad en el servicio (1 mes); tarifa mensual elevada ($74.50/mes); ausencia de soporte técnico y seguridad en línea; pago manual mediante cheque electrónico.
+NO,Cliente retenido sin indicadores de abandono: contrato establecido (Two year); alta fidelidad del cliente (72 meses acumulados); adopción de servicios complementarios (soporte/seguridad/backup).
+SI,Riesgo de fuga materializado debido a: Contrato mes a mes sin cláusula de permanencia; baja antigüedad (10 meses); tarifa mensual elevada ($98.55/mes); falta de asistencia técnica personalizada; pago manual mediante cheque electrónico.
+SI,Riesgo de fuga materializado debido a: Contrato mes a mes sin cláusula de permanencia; antigüedad intermedia (13 meses); tarifa mensual elevada ($96.65/mes); ausencia de soporte técnico y seguridad en línea.
+NO,Cliente retenido sin indicadores de abandono: contrato establecido (One year); alta fidelidad del cliente (35 meses acumulados); adopción de servicios complementarios (soporte/seguridad/backup).
+NO,Cliente retenido sin indicadores de abandono: adopción de servicios complementarios (soporte/seguridad/backup); tarifa mensual competitiva.
+NO,Cliente retenido sin indicadores de abandono: alta fidelidad del cliente (31 meses acumulados); adopción de servicios complementarios (soporte/seguridad/backup).
+NO,Cliente retenido sin indicadores de abandono: alta fidelidad del cliente (53 meses acumulados); adopción de servicios complementarios (soporte/seguridad/backup).
+NO,Cliente retenido sin indicadores de abandono: tarifa mensual competitiva.
+NO,Cliente retenido sin indicadores de abandono: contrato establecido (One year); alta fidelidad del cliente (30 meses acumulados); tarifa mensual competitiva.
+NO,Cliente retenido sin indicadores de abandono: alta fidelidad del cliente (46 meses acumulados).
+SI,Riesgo de fuga materializado debido a: Contrato mes a mes sin cláusula de permanencia; antigüedad intermedia (19 meses); tarifa mensual elevada ($89.65/mes); ausencia de soporte técnico y seguridad en línea.
+NO,Cliente retenido sin indicadores de abandono: adopción de servicios complementarios (soporte/seguridad/backup).
+SI,Riesgo de fuga materializado debido a: Contrato mes a mes sin cláusula de permanencia; antigüedad intermedia (15 meses); sin herramientas de protección cibernética.
+NO,Cliente retenido sin indicadores de abandono: contrato establecido (Two year); alta fidelidad del cliente (48 meses acumulados); tarifa mensual competitiva.
+SI,Riesgo de fuga materializado debido a: Contrato mes a mes sin cláusula de permanencia; antigüedad intermedia (25 meses); tarifa mensual elevada ($95.90/mes); ausencia de soporte técnico y seguridad en línea; pago manual mediante cheque electrónico.
+SI,Riesgo de fuga materializado debido a: Vencimiento o rescisión de contrato anual; antigüedad prolongada (52 meses); tarifa mensual elevada ($105.00/mes); sin herramientas de protección cibernética.
+SI,Riesgo de fuga materializado debido a: Contrato mes a mes sin cláusula de permanencia; baja antigüedad (12 meses); tarifa mensual elevada ($81.70/mes); falta de asistencia técnica personalizada.
+NO,Cliente retenido sin indicadores de abandono: contrato establecido (One year); alta fidelidad del cliente (48 meses acumulados); tarifa mensual competitiva.
+NO,Cliente retenido sin indicadores de abandono: contrato establecido (Two year); alta fidelidad del cliente (38 meses acumulados); tarifa mensual competitiva.
+NO,Cliente retenido sin indicadores de abandono: adopción de servicios complementarios (soporte/seguridad/backup); tarifa mensual competitiva.
+NO,Cliente retenido sin indicadores de abandono: alta fidelidad del cliente (45 meses acumulados).
+NO,Cliente retenido sin indicadores de abandono: estabilidad contractual y satisfacción del cliente.
+NO,Cliente retenido sin indicadores de abandono: contrato establecido (Two year); alta fidelidad del cliente (66 meses acumulados); adopción de servicios complementarios (soporte/seguridad/backup).
+NO,Cliente retenido sin indicadores de abandono: contrato establecido (Two year); alta fidelidad del cliente (72 meses acumulados); tarifa mensual competitiva.
+NO,Cliente retenido sin indicadores de abandono: contrato establecido (Two year); alta fidelidad del cliente (70 meses acumulados); adopción de servicios complementarios (soporte/seguridad/backup); tarifa mensual competitiva.
+NO,Cliente retenido sin indicadores de abandono: alta fidelidad del cliente (27 meses acumulados).
+NO,Cliente retenido sin indicadores de abandono: tarifa mensual competitiva.
+SI,Riesgo de fuga materializado debido a: Contrato mes a mes sin cláusula de permanencia; antigüedad intermedia (13 meses); tarifa mensual elevada ($95.25/mes); ausencia de soporte técnico y seguridad en línea; pago manual mediante cheque electrónico.
+NO,Cliente retenido sin indicadores de abandono: contrato establecido (Two year); alta fidelidad del cliente (65 meses acumulados); adopción de servicios complementarios (soporte/seguridad/backup).

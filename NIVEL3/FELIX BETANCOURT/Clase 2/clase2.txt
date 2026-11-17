@@ -1,0 +1,15 @@
+Repaso de Clase 1
+1) Obtención de conjunto de datos desde
+www.kaggle.com (Descargar)
+
+https://www.kaggle.com/datasets/mohithsairamreddy/salary-data
+
+2) Acceder a Claude IA y cargar el archivo
+
+
+Ejemplo 2.
+https://www.kaggle.com/search?q=churn+in%3Adatasets
+
+Del conjunto de datos cargado, genera una muestra de 100 registros aleatorios,
+en un archivo de formato csv, colocando en la primera fila la identificación de
+sus columnas.

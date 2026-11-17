@@ -1,0 +1,44 @@
+1) Definir hoja de trabajo en Google Sheets
+2) Crear formulario en TawkTo o cualquier otro chatbot
+3) Integrar vía zapier.
+
+Con eso queda activo el **Pre-chat Form**, que es la opción correcta para pedir esos datos antes de que el visitante empiece a escribir (a diferencia del Offline Form, que solo aparece cuando no hay agentes conectados).
+
+Un par de detalles que te pueden servir:
+
+- Si marcas el correo como obligatorio, Tawk.to valida automáticamente el formato del email.
+- Los datos capturados quedan asociados al ticket/conversación y también puedes verlos en la sección de "Visitors" del dashboard.
+- Si luego quieres usar esos datos en una automatización (por ejemplo, enviarlos a un CRM o a n8n), se pueden exportar vía la API de Tawk.to o con Zapier/Make.
+
+¿Necesitas que te ayude también a personalizar el mensaje de bienvenida que acompaña al formulario, o a configurar qué pasa después de que el visitante lo llena?
+
+Este comportamiento en el que un modelo multimodal de lenguaje (LLM) como Gemini prioriza la entrega de interfaces visuales renderizadas, capturas de pantalla simuladas o salidas de diseño por encima del código fuente estructurado (HTML, JavaScript, Python/Flask, etc.) responde a un cambio en los paradigmas de inferencia y diseño de producto recientes.
+
+---
+
+### ¿Cuál es la causa principal?
+
+1. **Activación de los submódulos de *Generative UI* (Interfaz Generativa):** Las versiones recientes del ecosistema Gemini incorporan capacidades nativas de interfaz generativa (*dynamic view* y layouts visuales) entrenadas para interpretar las solicitudes de aplicaciones web traduciéndolas de inmediato a componentes visuales interactivos para optimizar la experiencia del usuario final. Si el contexto de la sesión o el tono de los prompts se interpreta como una solicitud de diseño, el modelo activará la ruta visual en lugar de la ruta puramente sintáctica de texto/código.
+2. **Deriva de Intención en el Prompt (Prompt Drift):** Si en tus interacciones previas has evaluado interfaces, pedido mockups, o el historial arrastra instrucciones enfocadas en "diseñar", "mostrar cómo se ve" o "maquetar", el modelo sesga su atención hacia la modalidad gráfica por sobre la textual.
+3. **Ambigüedad en el rol de salida:** La alta capacidad multimodal de Gemini hace que interprete la construcción de una aplicación web bajo el prisma de la renderización de artefactos visuales si no se le restringe estrictamente a devolver bloques de código plano (`markdown code blocks`).
+
+---
+
+### Correctivo a utilizar
+
+Para forzar al modelo a retornar exclusivamente código fuente ejecutable, debes aplicar las siguientes directrices técnicas:
+
+* **Restricción de Formato Estricto (System Instruction):** Añade una directiva imperativa al inicio de tu prompt o configuración de sistema, por ejemplo:
+> *"Actúa estrictamente como un compilador de texto y generador de código fuente. Está prohibido el uso de herramientas de diseño visual, renderizado de interfaces o generación de imágenes/componentes gráficos interactivos. Toda respuesta debe entregarse exclusivamente en bloques de código estructurado (Markdown)."*
+
+
+* **Deshabilitar la interpretación visual implícita:** Evita términos ambiguos como *“diseñame una pantalla”*, *“hazme una interfaz”* o *“quiero ver cómo queda”*. Modifícalos por comandos de ingeniería de software precisos: *“Escribe el código fuente en [Lenguaje/Framework] del archivo backend y frontend para...”*.
+* **Uso de delimitadores de salida:** Exige la entrega modular por archivos individuales (ej. `app.py`, `index.html`) especificando que no deseas explicaciones visuales previas ni posteriores.
+
+---
+
+### Referencias históricas y bibliográficas
+
+1. **Google Research (2025).** *“Generative UI: A rich, custom, visual interactive user experience for any prompt”*. Este artículo técnico documenta la implementación de los paradigmas de *Dynamic View* y flujos visuales nativos en los modelos Gemini, explicando cómo el sistema decide priorizar interfaces interactivas frente a salidas de texto plano ante determinados patrones de prompts.
+2. **Koh, J. Y., et al. (2023 / Actualizaciones en embeddings multimodales).** *“Generating Images with Large Language Models (GILL)”*. Trabajo fundamental en la literatura sobre cómo los espacios latentes de los LLMs se mapean hacia decodificadores visuales o interfaces gráficas, dilucidando el solapamiento entre la generación de código sintáctico y la activación de representaciones visuales directas.
+3. **Thesys Technical Blog (2025).** *“Design vs Code in 2025: How Generative UI Is Rewriting Product Collaboration”*. Analiza el fenómeno industrial donde los motores de lenguaje cruzan la línea entre la entrega de código fuente tradicional y la generación automatizada de interfaces de usuario en tiempo de ejecución, detallando los retos de acotamiento técnico para los desarrolladores.

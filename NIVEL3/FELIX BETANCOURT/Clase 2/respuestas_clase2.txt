@@ -1,0 +1,172 @@
+Recibí el archivo. Voy a revisarlo rápido para saber qué contiene antes de preguntarte qué necesitas.Ya revisé el archivo. Tiene **6,704 registros** de sueldos con 6 columnas:
+
+1. **Age**: edad
+2. **Gender**: género
+3. **Education Level**: nivel educativo
+4. **Job Title**: puesto de trabajo
+5. **Years of Experience**: años de experiencia
+6. **Salary**: salario
+
+También detecté un detalle que conviene tener presente: hay unos pocos valores vacíos (2 a 5 por columna), así que habría que decidir cómo tratarlos antes de cualquier análisis.
+
+Como no indicaste qué necesitas, prefiero preguntarte antes de asumir. **¿Qué quieres que haga con este archivo?** Algunas opciones:
+
+1. **Informe técnico/ejecutivo** de hallazgos para directivos o clientes (distribución salarial, brechas por género, educación, experiencia).
+2. **Análisis de calidad de datos**: valores vacíos, duplicados, atípicos y detalles que pasan desapercibidos.
+3. **Benchmark salarial** por puesto, por ejemplo roles de TI y ciberseguridad frente al resto.
+4. **Hoja de Excel** con tablas dinámicas y gráficos.
+5. **Otra cosa** que tengas en mente.
+
+Si me dices cuál, y a quién va dirigido el resultado, lo preparo con el nivel de detalle que acostumbras.
+
+
+(2)
+El dataset contiene **193 títulos de puesto distintos** (en inglés, tal como vienen en el archivo). Los agrupé por área y entre paréntesis puse la cantidad de registros cuando es relevante.
+
+**1. Desarrollo de software e ingeniería**
+Software Engineer (518), Senior Software Engineer (244), Junior Software Engineer, Software Developer (125), Junior/Senior Software Developer, Developer, Junior Developer, Full Stack Engineer (309), Back end Developer (244), Front end / Front End Developer (272), Web Developer (87), Junior Web Developer, Software Engineer Manager (376), Software Manager, Software Project Manager, Senior Software Architect, Director of Engineering, Senior Engineer, Principal Engineer, Senior Project Engineer (318), Project Engineer, Senior Quality Assurance Analyst.
+
+**2. Datos e inteligencia de negocio**
+Data Scientist (453), Senior/Junior Data Scientist, Director of Data Science, Data Analyst (363), Junior/Senior Data Analyst, Senior Data Engineer, Business Intelligence Analyst, Chief Data Officer.
+
+**3. TI, soporte y redes**
+IT Support, IT Support Specialist, Senior IT Support Specialist, Help Desk Analyst, Technical Support Specialist, Network Engineer, IT Manager, Senior IT Consultant, Senior IT Project Manager, Chief Technology Officer.
+
+**4. Investigación y ciencia**
+Research Scientist, Senior/Junior Research Scientist, Research Director, Senior Scientist, Principal Scientist, Senior Researcher, UX Researcher.
+
+**5. Diseño y experiencia de usuario**
+Product Designer, Senior Product Designer, Graphic Designer, Senior Graphic Designer, UX Designer, Senior/Junior UX Designer, Junior Designer, Junior Web Designer, Creative Director.
+
+**6. Producto y gestión de proyectos**
+Product Manager (313), Senior/Junior Product Manager, Director of Product Management, Senior Product Development Manager, Project Manager, Senior/Junior Project Manager, Senior Project Coordinator.
+
+**7. Marketing y comunicación**
+Marketing Manager (255), Marketing Coordinator, Marketing Analyst, Director of Marketing, Marketing Director, Content Marketing Manager, Senior Product Marketing Manager, Product Marketing Manager, Digital Marketing Manager, Digital Marketing Specialist, Junior/Senior variantes de Marketing (Manager, Analyst, Coordinator, Specialist), Marketing Specialist, Senior Marketing Director, Social Media Manager, Social Media Specialist, Junior Social Media Manager/Specialist, Director of Sales and Marketing, Copywriter, Junior Copywriter, Digital Content Producer, Junior Advertising Coordinator, Public Relations Manager, Technical Writer.
+
+**8. Ventas y desarrollo de negocio**
+Sales Associate, Junior Sales Associate (142), Sales Representative, Junior/Senior Sales Representative, Sales Executive, Sales Manager, Senior Sales Manager, Sales Director, Director of Sales, Sales Operations Manager, Account Manager, Senior/Junior Account Manager, Senior Account Executive, Business Development Manager, Senior Business Development Manager, Junior Business Development Associate, Director of Business Development.
+
+**9. Recursos humanos**
+Human Resources Manager, HR Manager, Senior HR Manager, Senior Human Resources Manager, Director of HR, Director of Human Resources, Human Resources Director, Director of Human Capital, HR Generalist, Junior/Senior HR Generalist, Human Resources Coordinator, Junior HR Coordinator, Senior Human Resources Coordinator, Senior HR/Human Resources Specialist, Recruiter, Junior Recruiter, Technical Recruiter, Training Specialist, Senior Training Specialist.
+
+**10. Finanzas y contabilidad**
+Financial Manager, Financial Analyst, Junior/Senior Financial Analyst, Senior Financial Manager, Financial Advisor, Junior/Senior Financial Advisor, Director of Finance, VP of Finance, Accountant, Junior/Senior Accountant.
+
+**11. Operaciones y cadena de suministro**
+Operations Manager, Senior/Junior Operations Manager, Director of Operations, Operations Director, VP of Operations, Operations Analyst, Junior/Senior Operations Analyst, Junior/Senior Operations Coordinator, Junior Business Operations Analyst, Business Analyst, Junior/Senior Business Analyst, Supply Chain Manager, Supply Chain Analyst.
+
+**12. Atención al cliente y administrativo**
+Customer Service Representative, Customer Service Rep, Customer Service Manager, Customer Success Rep, Customer Success Manager, Junior Customer Support Specialist, Receptionist (57), Administrative Assistant, Office Manager, Event Coordinator, Data Entry Clerk.
+
+**13. Dirección general, consultoría y otros**
+CEO, Director, Senior Manager, Senior Consultant, Strategy Consultant, Delivery Driver (único oficio no corporativo).
+
+**Detalles de calidad de datos que conviene corregir antes de analizar**
+
+1. **Errores de escritura:** "Juniour HR Generalist" y "Juniour HR Coordinator" (6 registros), "Social M" y "Social Media Man" (cortados).
+2. **Duplicados por formato:** "Front end Developer" y "Front End Developer", "HR Manager" y "Human Resources Manager", "Customer Service Rep" y "Customer Service Representative", "Director of HR" y "Director of Human Resources".
+3. **Concentración:** unos 12 puestos acumulan más de la mitad de los registros, y unos 100 títulos aparecen solo una vez, lo que limita cualquier comparación salarial por puesto.
+
+¿Quieres que consolide los títulos (corrigiendo errores y unificando duplicados) y los agrupe en categorías para analizar salarios por área, por ejemplo TI y ciberseguridad frente al resto?
+
+(3)
+Con los puestos agrupados por área (6,699 registros válidos), este es el salario promedio, ordenado de mayor a menor. Excluí 5 registros sin puesto o sin salario. El promedio general del dataset es **115,327**. El archivo no indica la moneda, pero por el rango parecen dólares anuales.
+
+| # | Área | Registros | Promedio | Mediana |
+|---|------|-----------|----------|---------|
+| 1 | Investigación y ciencia | 200 | 155,875 | 160,000 |
+| 2 | Datos e inteligencia de negocio | 969 | 148,868 | 150,000 |
+| 3 | Producto y gestión de proyectos | 365 | 137,370 | 130,000 |
+| 4 | Finanzas y contabilidad | 206 | 124,223 | 120,000 |
+| 5 | Desarrollo de software e ingeniería | 2,657 | 121,292 | 122,354 |
+| 6 | Dirección general y otros | 11 | 107,273 | 130,000 |
+| 7 | Marketing y comunicación | 1,024 | 104,221 | 95,000 |
+| 8 | Operaciones y cadena de suministro | 172 | 98,095 | 96,000 |
+| 9 | TI, soporte y redes | 11 | 97,727 | 110,000 |
+| 10 | Recursos humanos | 427 | 86,837 | 90,000 |
+| 11 | Diseño y UX | 110 | 62,136 | 55,000 |
+| 12 | Ventas y desarrollo de negocio | 472 | 57,386 | 35,000 |
+| 13 | Atención al cliente y administrativo | 75 | 30,600 | 25,000 |
+
+**Cómo interpretarlo**
+
+1. **Las áreas analíticas y científicas lideran.** Investigación y Datos superan por mucho al resto, con una diferencia de unos 30,000 sobre el promedio general.
+2. **Ventas y Atención al cliente quedan al fondo.** Son las áreas con más puestos de entrada, como Sales Associate, Receptionist y Customer Service.
+3. **En Ventas el promedio engaña.** El promedio (57,386) está muy por encima de la mediana (35,000) porque unos pocos directores y gerentes elevan la cifra. Un vendedor típico gana cerca de la mediana. Es como medir el ingreso de un barrio donde viven unos pocos millonarios.
+4. **TI, soporte y redes no es representativa.** Solo tiene 11 registros (Network Engineer, IT Support, CTO, etc.), así que su promedio no permite concluir nada sólido. Lo mismo ocurre con Dirección general, también con 11 registros. Esto es relevante para tu perfil, porque el dataset casi no tiene información de TI y ciberseguridad.
+
+**Cosas que conviene tener presentes**
+
+1. **Valores sospechosos:** hay salarios mínimos de 350, 500 y 550 en Software, Operaciones y RRHH. Probablemente son errores de captura (por ejemplo, miles omitidos) y bajan ligeramente esos promedios.
+2. **La agrupación es mía.** Asigné cada puesto a un área por palabras clave, así que casos fronterizos como "Senior Project Engineer" (lo puse en Software) o "Business Analyst" (lo puse en Operaciones) podrían moverse según tu criterio.
+3. **Un promedio por área mezcla niveles.** Los junior y los directores pesan igual. Un análisis por nivel (Junior, Senior, Director) sería más justo.
+
+¿Quieres que lo lleve a un **Excel con gráficos y fórmulas**, o prefieres un **informe técnico para directivos** con estos hallazgos?
+
+(4)
+
+Este es el promedio de años de experiencia por área, con los mismos 6,699 registros y la misma agrupación del análisis salarial. El promedio general del dataset es **8.1 años**.
+
+| # | Área | Registros | Promedio (años) | Mediana (años) |
+|---|------|-----------|-----------------|----------------|
+| 1 | Investigación y ciencia | 200 | 11.5 | 11 |
+| 2 | Dirección general y otros | 11 | 9.8 | 13 |
+| 3 | TI, soporte y redes | 11 | 9.4 | 9 |
+| 4 | Finanzas y contabilidad | 206 | 9.1 | 7 |
+| 5 | Datos e inteligencia de negocio | 969 | 9.0 | 8 |
+| 6 | Operaciones y cadena de suministro | 172 | 8.7 | 7 |
+| 7 | Desarrollo de software e ingeniería | 2,657 | 8.6 | 6 |
+| 8 | Marketing y comunicación | 1,024 | 8.2 | 7 |
+| 9 | Producto y gestión de proyectos | 365 | 8.0 | 7 |
+| 10 | Recursos humanos | 427 | 7.6 | 8 |
+| 11 | Ventas y desarrollo de negocio | 472 | 3.7 | 2 |
+| 12 | Diseño y UX | 110 | 3.4 | 2 |
+| 13 | Atención al cliente y administrativo | 75 | 1.4 | 0 |
+
+**Cómo interpretarlo**
+
+1. **Investigación y ciencia es el área con más trayectoria.** Con 11.5 años de promedio, coincide con ser también el área mejor pagada. Ahí la experiencia parece valorarse mucho.
+2. **El grueso de las áreas se concentra entre 7.6 y 9.1 años.** Son perfiles de carrera media, con diferencias pequeñas entre sí.
+3. **Ventas, Diseño y Atención al cliente son áreas de perfil junior.** Tienen entre 1.4 y 3.7 años de promedio, y sus medianas (0 a 2 años) muestran que la mayoría está al inicio de su carrera. Esto explica en buena parte por qué también tienen los salarios más bajos.
+4. **En Software la mediana (6) queda por debajo del promedio (8.6).** Hay muchos perfiles de pocos años y unos cuantos muy veteranos, hasta 34 años, que suben el promedio.
+
+**Cosas que conviene tener presentes**
+
+1. **TI, soporte y redes y Dirección general solo tienen 11 registros cada una.** Sus promedios (9.4 y 9.8) no son confiables para sacar conclusiones.
+2. **Experiencia y salario se mueven juntos, pero no son lo mismo.** Finanzas y Datos tienen experiencia similar (9.1 y 9.0 años), pero Datos paga unos 25,000 más en promedio. Eso sugiere que el área pesa más que los años por sí solos.
+
+¿Quieres que cruce ambas variables, por ejemplo el **salario promedio por cada tramo de experiencia dentro de cada área**, o prefiero reunir todo en un **Excel con gráficos** o un **informe para directivos**?
+
+(5)
+
+Usé intervalos de 25,000 sobre los 6,699 registros con salario. El rango va de 350 a 250,000.
+
+| # | Rango salarial | Frecuencia | % | % acumulado |
+|---|----------------|-----------|------|-------------|
+| 1 | 0 – 25,000 | 4 | 0.1% | 0.1% |
+| 2 | 25,000 – 50,000 | 682 | 10.2% | 10.2% |
+| 3 | 50,000 – 75,000 | 1,188 | 17.7% | 28.0% |
+| 4 | 75,000 – 100,000 | 873 | 13.0% | 41.0% |
+| 5 | 100,000 – 125,000 | 985 | 14.7% | 55.7% |
+| 6 | 125,000 – 150,000 | 831 | 12.4% | 68.1% |
+| 7 | 150,000 – 175,000 | 907 | 13.5% | 81.7% |
+| 8 | 175,000 – 200,000 | 1,014 | 15.1% | 96.8% |
+| 9 | 200,000 – 225,000 | 195 | 2.9% | 99.7% |
+| 10 | 225,000 – 250,000 | 17 | 0.3% | 100% |
+
+Cada intervalo incluye su límite inferior y excluye el superior. Por ejemplo, un salario de exactamente 50,000 cuenta en el rango 50,000 – 75,000.
+
+**Cómo interpretarlo**
+
+1. **Hay dos concentraciones, no una sola.** El rango más poblado es 50,000 – 75,000 (1,188 registros), y hay un segundo pico en 175,000 – 200,000 (1,014). Es como una empresa con dos grupos marcados: el personal de entrada y los perfiles senior, con pocos en medio.
+2. **El centro está alrededor de 115,000.** El promedio es 115,327 y la mediana 115,000, así que la distribución es bastante simétrica. Los cuartiles son 70,000 y 160,000, lo que significa que la mitad central de los salarios cae entre esos dos valores.
+3. **La dispersión es alta.** La desviación estándar es 52,786, casi la mitad del promedio. Los sueldos están muy repartidos, y esto confirma lo que vimos al comparar áreas.
+4. **Hay un tope claro cerca de 200,000.** Solo el 3.2% supera ese valor, y el máximo es 250,000.
+5. **Los salarios más repetidos son redondos.** El más frecuente es 140,000 (287 registros), seguido de 120,000 (282) y 160,000 (276). Esto sugiere que muchos valores son cifras estimadas o de rangos salariales estándar, no sueldos exactos.
+
+**Un detalle a tener presente**
+
+El primer intervalo (0 – 25,000) tiene 4 registros, con salarios de 350, 500, 550 y 579. Son los mismos valores sospechosos que mencioné antes, probablemente errores de captura. No afectan mucho la forma general, pero conviene corregirlos o excluirlos en un informe formal.
+
+¿Quieres que haga la distribución **por área profesional** para ver qué áreas llenan cada pico, o prefieres reunir todo lo trabajado hasta ahora en un **Excel con gráficos** o un **informe para directivos**?

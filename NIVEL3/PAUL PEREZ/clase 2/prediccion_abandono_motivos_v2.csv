@@ -1,0 +1,101 @@
+﻿Predicción de Abandono,Motivo
+SI,"Alta probabilidad de abandono por contrato mes a mes sin permanencia, muy baja antigüedad (1 mes), método de pago por cheque electrónico (asociado a alta tasa de cancelación histórica), falta de soporte técnico contratado y ausencia de servicio de protección/seguridad online."
+NO,"Cliente retenido por alta antigüedad acumulada (41 meses), pago automático domiciliado y tarifa mensual accesible ($25.25/mes)."
+NO,"Cliente retenido por contrato a plazo fijo (two year), alta antigüedad acumulada (52 meses) y tarifa mensual accesible ($19.35/mes)."
+SI,"Alta probabilidad de abandono por contrato mes a mes sin permanencia, muy baja antigüedad (1 mes), tarifa mensual elevada en servicio de fibra óptica ($76.35/mes), método de pago por cheque electrónico (asociado a alta tasa de cancelación histórica), falta de soporte técnico contratado y ausencia de servicio de protección/seguridad online."
+NO,"Cliente retenido por contrato a plazo fijo (two year), alta antigüedad acumulada (67 meses), uso de servicios de soporte o seguridad adicional y pago automático domiciliado."
+NO,Bajo riesgo de abandono debido a alta antigüedad acumulada (68 meses) y pago automático domiciliado.
+NO,"Cliente retenido por contrato a plazo fijo (two year), permanencia estable de 23 meses, uso de servicios de soporte o seguridad adicional y pago automático domiciliado."
+NO,"Cliente retenido por contrato a plazo fijo (two year), alta antigüedad acumulada (72 meses), uso de servicios de soporte o seguridad adicional y pago automático domiciliado."
+NO,"Cliente retenido por contrato a plazo fijo (two year), alta antigüedad acumulada (70 meses), uso de servicios de soporte o seguridad adicional y pago automático domiciliado."
+SI,Riesgo elevado debido a contrato mes a mes sin permanencia y muy baja antigüedad (1 mes).
+NO,Perfil estable fundamentado en tarifa mensual accesible ($20.45/mes).
+NO,Perfil estable fundamentado en permanencia estable de 34 meses.
+NO,Bajo riesgo de abandono debido a contrato a plazo fijo (one year) y permanencia estable de 28 meses.
+SI,"Alta probabilidad de abandono por contrato mes a mes sin permanencia, antigüedad relativamente corta (18 meses), tarifa mensual elevada en servicio de fibra óptica ($85.45/mes), método de pago por cheque electrónico (asociado a alta tasa de cancelación histórica), ausencia de servicio de protección/seguridad online y segmento de adulto mayor con mayor sensibilidad al precio."
+NO,"Cliente retenido por permanencia estable de 15 meses, pago automático domiciliado y tarifa mensual accesible ($20.45/mes)."
+SI,"Alta probabilidad de abandono por contrato mes a mes sin permanencia, antigüedad relativamente corta (11 meses), tarifa mensual elevada en servicio de fibra óptica ($95.15/mes), falta de soporte técnico contratado, ausencia de servicio de protección/seguridad online y segmento de adulto mayor con mayor sensibilidad al precio."
+NO,Cliente con perfil de consumo continuo y bajo riesgo de cancelación.
+SI,"Alta probabilidad de abandono por contrato mes a mes sin permanencia, muy baja antigüedad (1 mes), tarifa mensual elevada en servicio de fibra óptica ($70.00/mes), método de pago por cheque electrónico (asociado a alta tasa de cancelación histórica), falta de soporte técnico contratado y ausencia de servicio de protección/seguridad online."
+NO,Perfil estable fundamentado en alta antigüedad acumulada (37 meses).
+NO,Perfil estable fundamentado en permanencia estable de 22 meses.
+SI,"Alta probabilidad de abandono por contrato mes a mes sin permanencia, muy baja antigüedad (1 mes), tarifa mensual elevada en servicio de fibra óptica ($70.25/mes), método de pago por cheque electrónico (asociado a alta tasa de cancelación histórica), falta de soporte técnico contratado y ausencia de servicio de protección/seguridad online."
+NO,Perfil estable fundamentado en tarifa mensual accesible ($19.45/mes).
+NO,Bajo riesgo de abandono debido a alta antigüedad acumulada (46 meses) y pago automático domiciliado.
+NO,"Cliente retenido por contrato a plazo fijo (one year), alta antigüedad acumulada (51 meses), uso de servicios de soporte o seguridad adicional y pago automático domiciliado."
+NO,"Cliente retenido por contrato a plazo fijo (one year), alta antigüedad acumulada (41 meses), uso de servicios de soporte o seguridad adicional y pago automático domiciliado."
+NO,Bajo riesgo de abandono debido a uso de servicios de soporte o seguridad adicional y pago automático domiciliado.
+NO,Bajo riesgo de abandono debido a alta antigüedad acumulada (45 meses) y pago automático domiciliado.
+NO,Bajo riesgo de abandono debido a permanencia estable de 29 meses y uso de servicios de soporte o seguridad adicional.
+SI,"Alta probabilidad de abandono por contrato mes a mes sin permanencia, antigüedad relativamente corta (15 meses), tarifa mensual elevada en servicio de fibra óptica ($91.50/mes), método de pago por cheque electrónico (asociado a alta tasa de cancelación histórica), falta de soporte técnico contratado, ausencia de servicio de protección/seguridad online y segmento de adulto mayor con mayor sensibilidad al precio."
+NO,"Cliente retenido por contrato a plazo fijo (two year), alta antigüedad acumulada (72 meses), uso de servicios de soporte o seguridad adicional y pago automático domiciliado."
+NO,"Cliente retenido por contrato a plazo fijo (one year), alta antigüedad acumulada (50 meses) y uso de servicios de soporte o seguridad adicional."
+NO,"Cliente retenido por contrato a plazo fijo (two year), permanencia estable de 27 meses y tarifa mensual accesible ($20.60/mes)."
+NO,"Cliente retenido por contrato a plazo fijo (two year), alta antigüedad acumulada (72 meses), uso de servicios de soporte o seguridad adicional y pago automático domiciliado."
+NO,"Cliente retenido por contrato a plazo fijo (one year), alta antigüedad acumulada (51 meses), uso de servicios de soporte o seguridad adicional y pago automático domiciliado."
+NO,"Cliente retenido por alta antigüedad acumulada (60 meses), uso de servicios de soporte o seguridad adicional y pago automático domiciliado."
+NO,"Cliente retenido por contrato a plazo fijo (two year), permanencia estable de 17 meses, pago automático domiciliado y tarifa mensual accesible ($19.45/mes)."
+NO,"Cliente retenido por contrato a plazo fijo (two year), alta antigüedad acumulada (72 meses), pago automático domiciliado y tarifa mensual accesible ($21.15/mes)."
+SI,"Alta probabilidad de abandono por contrato mes a mes sin permanencia, tarifa mensual elevada en servicio de fibra óptica ($104.40/mes), método de pago por cheque electrónico (asociado a alta tasa de cancelación histórica), falta de soporte técnico contratado y ausencia de servicio de protección/seguridad online."
+NO,Bajo riesgo de abandono debido a contrato a plazo fijo (one year) y alta antigüedad acumulada (66 meses).
+SI,"Alta probabilidad de abandono por contrato mes a mes sin permanencia, tarifa mensual elevada en servicio de fibra óptica ($103.95/mes), método de pago por cheque electrónico (asociado a alta tasa de cancelación histórica), falta de soporte técnico contratado y ausencia de servicio de protección/seguridad online."
+SI,"Alta probabilidad de abandono por contrato mes a mes sin permanencia, muy baja antigüedad (5 meses), método de pago por cheque electrónico (asociado a alta tasa de cancelación histórica), falta de soporte técnico contratado y ausencia de servicio de protección/seguridad online."
+NO,"Cliente retenido por contrato a plazo fijo (one year), alta antigüedad acumulada (57 meses) y pago automático domiciliado."
+SI,"Alta probabilidad de abandono por contrato mes a mes sin permanencia, antigüedad relativamente corta (8 meses), tarifa mensual elevada en servicio de fibra óptica ($75.75/mes), método de pago por cheque electrónico (asociado a alta tasa de cancelación histórica), falta de soporte técnico contratado, ausencia de servicio de protección/seguridad online y segmento de adulto mayor con mayor sensibilidad al precio."
+NO,"Cliente retenido por contrato a plazo fijo (one year), permanencia estable de 14 meses y pago automático domiciliado."
+SI,"Alta probabilidad de abandono por contrato mes a mes sin permanencia, tarifa mensual elevada en servicio de fibra óptica ($94.70/mes), falta de soporte técnico contratado y ausencia de servicio de protección/seguridad online."
+NO,"Cliente retenido por contrato a plazo fijo (one year), alta antigüedad acumulada (52 meses), pago automático domiciliado y tarifa mensual accesible ($19.60/mes)."
+NO,Bajo riesgo de abandono debido a uso de servicios de soporte o seguridad adicional y pago automático domiciliado.
+SI,"Alta probabilidad de abandono por contrato mes a mes sin permanencia, antigüedad relativamente corta (13 meses), tarifa mensual elevada en servicio de fibra óptica ($79.80/mes), método de pago por cheque electrónico (asociado a alta tasa de cancelación histórica), falta de soporte técnico contratado y ausencia de servicio de protección/seguridad online."
+SI,"Alta probabilidad de abandono por contrato mes a mes sin permanencia, antigüedad relativamente corta (15 meses), tarifa mensual elevada en servicio de fibra óptica ($89.85/mes), método de pago por cheque electrónico (asociado a alta tasa de cancelación histórica), falta de soporte técnico contratado, ausencia de servicio de protección/seguridad online y segmento de adulto mayor con mayor sensibilidad al precio."
+NO,"Cliente retenido por contrato a plazo fijo (one year), permanencia estable de 22 meses, uso de servicios de soporte o seguridad adicional y pago automático domiciliado."
+NO,Bajo riesgo de abandono debido a permanencia estable de 19 meses y tarifa mensual accesible ($19.90/mes).
+NO,"Cliente retenido por permanencia estable de 23 meses, uso de servicios de soporte o seguridad adicional, pago automático domiciliado y tarifa mensual accesible ($30.35/mes)."
+NO,"Cliente retenido por contrato a plazo fijo (two year), alta antigüedad acumulada (72 meses), uso de servicios de soporte o seguridad adicional y pago automático domiciliado."
+NO,"Cliente retenido por contrato a plazo fijo (two year), alta antigüedad acumulada (72 meses) y pago automático domiciliado."
+NO,"Cliente retenido por alta antigüedad acumulada (59 meses), uso de servicios de soporte o seguridad adicional y pago automático domiciliado."
+NO,"Cliente retenido por contrato a plazo fijo (two year), alta antigüedad acumulada (70 meses), uso de servicios de soporte o seguridad adicional y pago automático domiciliado."
+NO,"Cliente retenido por contrato a plazo fijo (two year), alta antigüedad acumulada (70 meses), uso de servicios de soporte o seguridad adicional y pago automático domiciliado."
+SI,"Alta probabilidad de abandono por contrato mes a mes sin permanencia, antigüedad relativamente corta (9 meses), tarifa mensual elevada en servicio de fibra óptica ($103.10/mes), método de pago por cheque electrónico (asociado a alta tasa de cancelación histórica) y ausencia de servicio de protección/seguridad online."
+NO,Perfil estable fundamentado en tarifa mensual accesible ($24.60/mes).
+SI,"Alta probabilidad de abandono por contrato mes a mes sin permanencia, antigüedad relativamente corta (17 meses), tarifa mensual elevada en servicio de fibra óptica ($101.80/mes), método de pago por cheque electrónico (asociado a alta tasa de cancelación histórica), falta de soporte técnico contratado, ausencia de servicio de protección/seguridad online y segmento de adulto mayor con mayor sensibilidad al precio."
+NO,"Cliente retenido por contrato a plazo fijo (one year), permanencia estable de 28 meses y pago automático domiciliado."
+NO,Perfil estable fundamentado en uso de servicios de soporte o seguridad adicional.
+NO,Bajo riesgo de abandono debido a pago automático domiciliado y tarifa mensual accesible ($20.95/mes).
+NO,"Cliente retenido por contrato a plazo fijo (two year), alta antigüedad acumulada (72 meses), uso de servicios de soporte o seguridad adicional y pago automático domiciliado."
+NO,Cliente con perfil de consumo continuo y bajo riesgo de cancelación.
+NO,"Cliente retenido por contrato a plazo fijo (two year), alta antigüedad acumulada (69 meses), pago automático domiciliado y tarifa mensual accesible ($20.30/mes)."
+NO,"Cliente retenido por contrato a plazo fijo (two year), alta antigüedad acumulada (39 meses), pago automático domiciliado y tarifa mensual accesible ($19.85/mes)."
+NO,"Cliente retenido por contrato a plazo fijo (two year), alta antigüedad acumulada (67 meses), uso de servicios de soporte o seguridad adicional y pago automático domiciliado."
+NO,"Cliente retenido por contrato a plazo fijo (one year), alta antigüedad acumulada (39 meses) y tarifa mensual accesible ($19.90/mes)."
+NO,"Cliente retenido por contrato a plazo fijo (two year), alta antigüedad acumulada (54 meses), uso de servicios de soporte o seguridad adicional y pago automático domiciliado."
+SI,"Alta probabilidad de abandono por contrato mes a mes sin permanencia, muy baja antigüedad (1 mes), tarifa mensual elevada en servicio de fibra óptica ($74.50/mes), método de pago por cheque electrónico (asociado a alta tasa de cancelación histórica), falta de soporte técnico contratado y ausencia de servicio de protección/seguridad online."
+NO,"Cliente retenido por contrato a plazo fijo (two year), alta antigüedad acumulada (72 meses) y uso de servicios de soporte o seguridad adicional."
+SI,"Alta probabilidad de abandono por contrato mes a mes sin permanencia, antigüedad relativamente corta (10 meses), tarifa mensual elevada en servicio de fibra óptica ($98.55/mes), método de pago por cheque electrónico (asociado a alta tasa de cancelación histórica) y falta de soporte técnico contratado."
+SI,"Alta probabilidad de abandono por contrato mes a mes sin permanencia, antigüedad relativamente corta (13 meses), tarifa mensual elevada en servicio de fibra óptica ($96.65/mes), falta de soporte técnico contratado y ausencia de servicio de protección/seguridad online."
+NO,"Cliente retenido por contrato a plazo fijo (one year), permanencia estable de 35 meses y uso de servicios de soporte o seguridad adicional."
+NO,"Cliente retenido por permanencia estable de 12 meses, uso de servicios de soporte o seguridad adicional y tarifa mensual accesible ($35.50/mes)."
+NO,"Cliente retenido por permanencia estable de 31 meses, uso de servicios de soporte o seguridad adicional y pago automático domiciliado."
+NO,"Cliente retenido por alta antigüedad acumulada (53 meses), uso de servicios de soporte o seguridad adicional y pago automático domiciliado."
+NO,Perfil estable fundamentado en tarifa mensual accesible ($19.50/mes).
+NO,"Cliente retenido por contrato a plazo fijo (one year), permanencia estable de 30 meses y tarifa mensual accesible ($19.70/mes)."
+NO,Bajo riesgo de abandono debido a alta antigüedad acumulada (46 meses) y pago automático domiciliado.
+NO,Perfil estable fundamentado en permanencia estable de 19 meses.
+NO,Bajo riesgo de abandono debido a permanencia estable de 23 meses y uso de servicios de soporte o seguridad adicional.
+NO,"Cliente retenido por permanencia estable de 15 meses, uso de servicios de soporte o seguridad adicional y pago automático domiciliado."
+NO,"Cliente retenido por contrato a plazo fijo (two year), alta antigüedad acumulada (48 meses), pago automático domiciliado y tarifa mensual accesible ($20.15/mes)."
+SI,"Alta probabilidad de abandono por contrato mes a mes sin permanencia, tarifa mensual elevada en servicio de fibra óptica ($95.90/mes), método de pago por cheque electrónico (asociado a alta tasa de cancelación histórica), falta de soporte técnico contratado y ausencia de servicio de protección/seguridad online."
+NO,"Cliente retenido por contrato a plazo fijo (one year), alta antigüedad acumulada (52 meses), uso de servicios de soporte o seguridad adicional y pago automático domiciliado."
+NO,"Cliente retenido por permanencia estable de 12 meses, uso de servicios de soporte o seguridad adicional y pago automático domiciliado."
+NO,"Cliente retenido por contrato a plazo fijo (one year), alta antigüedad acumulada (48 meses), pago automático domiciliado y tarifa mensual accesible ($24.55/mes)."
+NO,"Cliente retenido por contrato a plazo fijo (two year), alta antigüedad acumulada (38 meses) y tarifa mensual accesible ($20.05/mes)."
+NO,"Cliente retenido por permanencia estable de 18 meses, uso de servicios de soporte o seguridad adicional y tarifa mensual accesible ($35.20/mes)."
+NO,Bajo riesgo de abandono debido a alta antigüedad acumulada (45 meses) y pago automático domiciliado.
+SI,"Alta probabilidad de abandono por contrato mes a mes sin permanencia, antigüedad relativamente corta (12 meses), tarifa mensual elevada en servicio de fibra óptica ($89.55/mes), método de pago por cheque electrónico (asociado a alta tasa de cancelación histórica), falta de soporte técnico contratado y ausencia de servicio de protección/seguridad online."
+NO,"Cliente retenido por contrato a plazo fijo (two year), alta antigüedad acumulada (66 meses), uso de servicios de soporte o seguridad adicional y pago automático domiciliado."
+NO,"Cliente retenido por contrato a plazo fijo (two year), alta antigüedad acumulada (72 meses), pago automático domiciliado y tarifa mensual accesible ($20.25/mes)."
+NO,"Cliente retenido por contrato a plazo fijo (two year), alta antigüedad acumulada (70 meses), uso de servicios de soporte o seguridad adicional, pago automático domiciliado y tarifa mensual accesible ($44.60/mes)."
+NO,Bajo riesgo de abandono debido a permanencia estable de 27 meses y pago automático domiciliado.
+NO,Perfil estable fundamentado en tarifa mensual accesible ($20.00/mes).
+SI,"Alta probabilidad de abandono por contrato mes a mes sin permanencia, antigüedad relativamente corta (13 meses), tarifa mensual elevada en servicio de fibra óptica ($95.25/mes), método de pago por cheque electrónico (asociado a alta tasa de cancelación histórica), falta de soporte técnico contratado, ausencia de servicio de protección/seguridad online y segmento de adulto mayor con mayor sensibilidad al precio."
+NO,"Cliente retenido por contrato a plazo fijo (two year), alta antigüedad acumulada (65 meses) y uso de servicios de soporte o seguridad adicional."
